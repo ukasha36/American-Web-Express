@@ -168,7 +168,7 @@ function Banner() {
         // loop={true}
               autoplay={{
                 delay: 2500,
-                disableOnInteraction: True,
+             
 
                }}
 
