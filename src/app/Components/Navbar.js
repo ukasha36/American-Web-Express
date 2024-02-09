@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
- 
+import { global } from "styled-jsx/css";
+
 
 import { Component, useState } from "react";
 
@@ -76,7 +77,7 @@ function NavBar() {
                     </Link>
                   </li>
                 <li className="sm:pb-3 md:pb-2  sm:text-xl md:text-lg hover:sm:bg-brand-100  font-sans hover:text-brand-300  rounded-md    font-semibold md:text-brand-50  md:border-2 md:border-solid md:border-brand-100 sm:text-brand-200   py-2 px-6 text-center   navbar-link">
-                  <Link href="touch" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/touch" onClick={() => setNavbar(!navbar)}>
                   Get in Touch 
                   </Link>
                 </li>

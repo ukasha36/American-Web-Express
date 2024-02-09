@@ -5,3 +5,20 @@
 .navbar-link:active {
     color : #D24545 ;
   }
+  .my-custom-background {
+    background-image: url('/bg1.jpg');
+    background-repeat: no-repeat; /* Optional: control repetition */
+    background-size: cover; /* Optional: resize to fit */
+    background-position: center; /* Optional: set position */
+  }
+  .center{
+    align-items: center;
+  }
+  .swiper-pagination {
+    color: #D24545;
+  }
+  .swiper {
+    width: 100%;
+    height: 70vh;
+  }
+  
