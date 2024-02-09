@@ -165,7 +165,7 @@ function Banner() {
         modules={[Navigation, Pagination, Scrollbar,  Autoplay]}
         slidesPerView={1}
         direction="vertical" // Set direction to vertical
-        loop={true}
+        // loop={true}
               autoplay={{
                 delay: 2500,
                }}
