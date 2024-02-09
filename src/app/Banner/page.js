@@ -168,8 +168,7 @@ function Banner() {
         loop={true}
               autoplay={{
                 delay: 2500,
-                disableOnInteraction: false,
-              }}
+               }}
 
         pagination={{
           clickable: true, // Enable pagination dots
@@ -380,8 +379,12 @@ function Banner() {
       {/* Section 5  */}
 
 
-      <div>
-      In progress....
+      <div className=" md:h-">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </>
   );
