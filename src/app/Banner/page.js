@@ -471,7 +471,7 @@ function Banner() {
           to be repudiated and annoyances accepted. The wise man therefore
           always holds in these matters to this principle of selection: he
           rejects pleasures to secure other greater pleasures, or else he
-          endures pains to avoid worse pains." Hello{" "}
+          endures pains to avoid worse pains." Hello Hello{" "}
         </div>
         <div></div>
         <div></div>
