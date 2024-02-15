@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
  
 .navbar-link:active {
     color : #D24545 ;
@@ -17,8 +21,52 @@
   .swiper-pagination {
     color: #D24545;
   }
-  .swiper {
+
+  .swiper-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+.second-swiper.swiper-wrapper {
+
+  padding-top: 3rem;
+  padding-left: 0.8rem;
+ }
+  .client{
     width: 100%;
+    height: 40vh;
+  }
+  .border{
+      border-width: 1px;
+  }
+  .border-bottom{
+    border-bottom: 1px solid #e1e8ed;
+  }
+  .border-full{
+    border: 1px solid #e1e8ed;
+    border-radius: 6px ;
+  }
+  .work{
     height: 70vh;
   }
-  
+ .icon{
+ 
+    background: #00387F;
+    color: #fff;
+    font-size: 16px;
+ 
+    line-height: 40px;
+    text-align: center;
+    height: 1.7rem !important;
+    padding: 0.4rem;
+    border-radius: 10px;
+    width: 1.9rem
+ }
+ .montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

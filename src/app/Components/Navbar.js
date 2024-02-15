@@ -76,7 +76,7 @@ function NavBar() {
                     Packages
                     </Link>
                   </li>
-                <li className="sm:pb-3 md:pb-2  sm:text-xl md:text-lg hover:sm:bg-brand-100  font-sans hover:text-brand-300  rounded-md    font-semibold md:text-brand-50  md:border-2 md:border-solid md:border-brand-100 sm:text-brand-200   py-2 px-6 text-center   navbar-link">
+                <li className="sm:pb-2 md:pb-2 md:w-40 sm:text-xl md:text-base  py-2 px-2 text-center hover:sm:bg-brand-100  font-sans hover:text-brand-300  md:rounded-md    font-semibold md:text-brand-100   md:border md:border-solid md:border-brand-100 sm:text-brand-200   ">
                   <Link href="/touch" onClick={() => setNavbar(!navbar)}>
                   Get in Touch 
                   </Link>

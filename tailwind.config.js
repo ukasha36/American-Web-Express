@@ -15,17 +15,18 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-          sans: ['Montserrat', "sans-serif"],
+          monte: ['Montserrat', "sans-serif"],
       },
       },
     colors: {
       brand: {
         50: '#7A7A7A',
-        100: '#fe7062',
+        100: '#FF0000',
         200: '#33373d',
         300:  '#FFFFFF',
-        400:  '#000',
-        500:  '#F9F9F9'
+        400:  '#110729',
+        500:  '#F9F9F9',
+        600:  '#1c2022'
 
         /* ... other shades for brand */
       },
