@@ -33,19 +33,19 @@ function Banner() {
               alt="logo "
               className="h-6"
             />
-            <h4> GROUP OF PROFESSIONALS </h4>
+            <h4 className=" font-monte "> GROUP OF PROFESSIONALS </h4>
           </div>
           <div className="w-full sm:h-3/4  md:h-3/6 md:flex md:flex-col justify-around pl-4 pr-3  ">
-            <h1 className=" sm:text-2xl  md:text-4xl font-poppins font-extrabold capitalize text-brand-400  sm:text-wrap md:text-clip md:leading-9 mb-4 ">
+            <h1 className=" sm:text-2xl  md:text-4xl font-monte font-extrabold capitalize text-brand-400  sm:text-wrap md:text-clip md:leading-9 mb-4 ">
               Certified solutions to empower your vision.
             </h1>
-            <p className="leading-6 mb-4 text-brand-50 font-poppins   sm:text-justify  ">
+            <p className="leading-6 mb-4 text-brand-50 font-monte   sm:text-justify  ">
               We are a leading software development & marketing company based in
               the USA, delivering cutting-edge digital solutions. Specializing
               in creating powerful software applications web development, social
               media marketing and content marketing etc.
             </p>
-            <button className="sm:pb-2 md:pb-2 md:w-40 sm:text-xl md:text-base   py-2 px-2 text-center hover:sm:bg-brand-100  font-sans hover:text-brand-300  rounded-md    font-semibold md:text-brand-100   border md:border-solid md:border-brand-100 sm:text-brand-200   ">
+            <button className="sm:pb-2 md:pb-2 md:w-40 sm:text-xl md:text-base   py-2 px-2 text-center hover:sm:bg-brand-100  font-monte hover:text-brand-300  rounded-md    font-medium text-brand-100   border md:border-solid border-brand-100    ">
               <Link href="/about">Read More</Link>
             </button>
           </div>
@@ -61,7 +61,7 @@ function Banner() {
         </div>
       </div>
       {/* Section 2  */}
-      <div className="bg-brand-500  flex sm:flex-col md:flex-row  sm:p-4 sm:h-[56rem] md:h-lvh min-w-full sm:justify-start md:justify-center ">
+      <div className="bg-brand-500 font-monte flex sm:flex-col md:flex-row  sm:p-4 sm:h-[56rem] md:h-lvh min-w-full sm:justify-start md:justify-center ">
         <div className="    md:w-2/4 flex flex-col justify-items-center">
           <div className="flex sm:h-9  md:h-9 w-full  ">
             <Image
@@ -74,10 +74,10 @@ function Banner() {
             <h4> 100% GURANTEED RESULTS </h4>
           </div>
           <div className="text-pretty md:w-11/12 ">
-            <h1 className="   sm:text-2xl  md:text-4xl font-poppins font-extrabold capitalize text-brand-400  sm:text-balance md:text-clip sm:leading-7  md:leading-9 mb-4 ">
+            <h1 className="   sm:text-2xl  md:text-4xl font-monte font-extrabold capitalize text-brand-400  sm:text-balance md:text-clip sm:leading-7  md:leading-9 mb-4 ">
               Professional Tech Solutions, London
             </h1>
-            <p className="text-brand-50 sm:text-justify">
+            <p className="text-brand-50 sm:text-justify font-medium ">
               we pride ourselves on being the foremost choice for clients
               seeking unparalleled software and marketing solutions. Our
               commitment to excellence is reflected in our continuous investment
@@ -110,7 +110,7 @@ function Banner() {
       {/* Section 3  */}
       <div className=" flex sm:flex-col sm:justify-evenly  md:pb-10 sm:h-[100rem] md:h-[150vh] min-w-full   md:justify-around ">
         <div className="flex justify-center items-center sm:h-9 md:h-1/5 ">
-          <h2 className=" sm:text-2xl  md:text-5xl font-bold font-poppins  ">
+          <h2 className=" sm:text-2xl  md:text-5xl font-bold font-monte  ">
             {" "}
             Our Work{" "}
           </h2>
@@ -165,7 +165,7 @@ function Banner() {
       </div>
       {/* Section 4  */}
       <Swiper
-        className=" sm:h-[40rem] md:h-[70vh] second-swiper "
+        className=" sm:h-[40rem] md:h-[70vh] second-swiper font-monte  "
         modules={[Navigation, Pagination, Scrollbar, Autoplay]}
         slidesPerView={1}
         direction="horizontal" // Set direction to vertical
@@ -201,7 +201,7 @@ function Banner() {
                 </h4>
               </div>
               <div className=" sm:w-5/6  md:w-2/6 flex sm:h-2/4  md:h-3/5 md:pl-12 sm:pl-4">
-                <p className=" text-brand-50 text-justify sm:leading-5 sm:text-sm md:text-base">
+                <p className=" text-brand-50 text-justify sm:leading-5 sm:text-sm md:text-base font-medium ">
                   Our skilled web developers craft digital excellence, turning
                   visions into online realities.With expertise and innovation,
                   we transform ideas into dynamic websites, ensuring your online
@@ -261,7 +261,7 @@ function Banner() {
                 </h4>
               </div>
               <div className=" sm:w-5/6  md:w-2/6 flex sm:h-2/4  md:h-3/5 md:pl-12 sm:pl-4">
-                <p className=" text-brand-50 text-justify sm:leading-5 sm:text-sm md:text-base">
+                <p className=" text-brand-50 text-justify sm:leading-5 sm:text-sm md:text-base font-medium ">
                   Our skilled web developers craft digital excellence, turning
                   visions into online realities.With expertise and innovation,
                   we transform ideas into dynamic websites, ensuring your online
@@ -321,7 +321,7 @@ function Banner() {
                 </h4>
               </div>
               <div className=" sm:w-5/6  md:w-2/6 flex sm:h-2/4  md:h-3/5 md:pl-12 sm:pl-4">
-                <p className=" text-brand-50 text-justify sm:leading-5 sm:text-sm md:text-base">
+                <p className=" text-brand-50 text-justify sm:leading-5 sm:text-sm md:text-base font-medium ">
                   Our skilled web developers craft digital excellence, turning
                   visions into online realities.With expertise and innovation,
                   we transform ideas into dynamic websites, ensuring your online
@@ -380,7 +380,7 @@ function Banner() {
                 </h4>
               </div>
               <div className=" sm:w-5/6  md:w-2/6 flex sm:h-2/4  md:h-3/5 md:pl-12 sm:pl-4">
-                <p className=" text-brand-50 text-justify sm:leading-5 sm:text-sm md:text-base">
+                <p className=" text-brand-50 text-justify sm:leading-5 sm:text-sm md:text-base font-medium  ">
                   Our skilled web developers craft digital excellence, turning
                   visions into online realities.With expertise and innovation,
                   we transform ideas into dynamic websites, ensuring your online
@@ -423,7 +423,7 @@ function Banner() {
 
       <div className="   sm:h-[100rem] md:h-[160vh] flex flex-col min-w-full md:mt-10 bg-brand-500 ">
         <div className=" w-full sm:h-[10rem] sm:items-center md:h-1/12 sm:justify-center flex  md:justify-center  md:pb-5">
-          <h2 className=" sm:text-4xl md:text-6xl font-bold font-poppins">
+          <h2 className=" sm:text-4xl md:text-6xl font-bold font-monte">
             {" "}
             Work Flow{" "}
           </h2>
@@ -431,7 +431,7 @@ function Banner() {
 
         {/* Work 1  */}
 
-        <div className=" flex sm:h-[30rem] sm:flex-col-reverse md:flex-row   w-full  md:h-1/4 md:justify-center ">
+        <div className=" flex sm:h-[30rem] sm:flex-col-reverse md:flex-row   w-full  md:h-1/4 md:justify-center font-monte ">
           <div className="  sm:h-3/5   sm:justify-center    md:w-2/5 md:h-full flex justify-end ">
             <Image
               src="/work1.jpg"
@@ -455,7 +455,7 @@ function Banner() {
             <h3 className=" sm:font-semibold sm:text-center md:font-bold text-3xl mb-3 mt-3 md:text-justify text-brand-100 ">
               Visual Design Creation{" "}
             </h3>
-            <p className="sm:text-center md:text-start text-brand-50 font-poppins sm:p-[0.6rem] ">
+            <p className="sm:text-center md:text-start text-brand-50 font-monte sm:p-[0.6rem] font-medium ">
               Develop visually appealing graphics and design elements that align
               with your brand identity and marketing goals{" "}
             </p>
@@ -466,10 +466,10 @@ function Banner() {
 
         <div className=" flex sm:h-[30rem]  sm:flex-col  md:flex-row   w-full   md:h-1/5 md:justify-center ">
           <div className=" md:w-2/5 md:h-full flex sm:flex-col   sm:h-2/5 md:justify-center ">
-            <h3 className=" sm:font-semibold sm:text-center md:font-bold text-3xl mb-3 mt-3 md:text-justify text-brand-100 ">
+            <h3 className=" sm:font-semibold sm:text-center  md:font-bold text-3xl mb-3 mt-3 md:text-justify text-brand-100 ">
               Branding Identity{" "}
             </h3>
-            <p className="sm:text-center md:text-start text-brand-50 font-poppins sm:p-[0.6rem] ">
+            <p className="sm:text-center md:text-start text-brand-50 font-medium sm:p-[0.6rem]  font-monte ">
               Maintain consistency in branding across all digital assets,
               including logos, color schemes, typography, and imagery
             </p>
@@ -519,10 +519,10 @@ function Banner() {
             />
           </div>
           <div className="  sm:h-2/5  md:w-2/5 md:h-full flex flex-col  md:justify-center ">
-            <h3 className=" sm:font-semibold sm:text-center md:font-bold text-3xl mb-3 mt-3 md:text-justify text-brand-100 ">
+            <h3 className=" sm:font-semibold sm:text-center font-monte md:font-bold text-3xl mb-3 mt-3 md:text-justify text-brand-100 ">
               Performance Analysis
             </h3>
-            <p className="sm:text-center md:text-start text-brand-50 font-poppins sm:p-[0.6rem] ">
+            <p className="sm:text-center md:text-start text-brand-50   sm:p-[0.6rem] font-monte font-medium ">
               Monitor the performance of visual content and marketing campaigns
               using analytics tools to track engagement metrics
             </p>
@@ -534,11 +534,11 @@ function Banner() {
 
       <div className=" sm:flex-col  sm:h-[64rem]  sm:pb-4  md:h-[50vh] flex md:flex-row min-w-full ">
         <div className=" sm:w-full  sm:h-[20rem] sm:items-center  md:items-start sm:justify-evenly md:h-full md:w-2/5 flex flex-col md:justify-center  md:pl-10">
-          <h4 className=" sm:text-4xl  md:text-3xl font-poppins font-semibold">
+          <h4 className=" sm:text-4xl  md:text-3xl font-monte font-semibold">
             {" "}
             Our Clientele
           </h4>
-          <p className=" sm:pl-[0.7rem] sm:pr-[0.6rem] sm:text-center md:text-left md:pl-[0rem] text-brand-50 md:pb-2 md:pt-2 font-poppins">
+          <p className=" sm:pl-[0.7rem] sm:pr-[0.6rem] sm:text-center md:text-left md:pl-[0rem] text-brand-50 md:pb-2 md:pt-2 font-monte font-medium">
             Trusted by a wide range of businesses to enhance their digital
             presence and help them achieve their marketing objectives
           </p>
@@ -596,11 +596,11 @@ function Banner() {
       {/* Section 4  */}
 
       <div className=" sm:min-w-full sm:h-[6rem]  bg-brand-500  flex justify-center items-end">
-        <h2 className=" sm:text-5xl font-poppins">Reviews</h2>
+        <h2 className=" sm:text-5xl font-monte">Reviews</h2>
       </div>
 
       <Swiper
-        className=" sm:h-[35rem] min-w-full md:h-[60vh] bg-brand-500 md:pt-4 "
+        className=" sm:h-[35rem] min-w-full md:h-[60vh] bg-brand-500 md:pt-4 font-monte "
         modules={[Navigation, Pagination, Scrollbar, Autoplay]}
         slidesPerView={1}
         breakpoints={{
@@ -771,7 +771,7 @@ function Banner() {
         </div>
         <div className="  sm:flex-col sm:pl-4 md:pl-1 md:h-2/4  w-full  flex md:flex-row md:justify-evenly ">
           <div className=" sm:h-[10rem]  md:h-full md:w-1/4 flex md:justify-center ">
-            <ol className=" sm:justify-evenly    flex flex-col font-poppins  ">
+            <ol className=" sm:justify-evenly    flex flex-col font-monte  ">
               <li className=" font-monte font-semibold md:text-[1.2rem]  md:mb-5 "> Quick Links </li>
               <li className=" font-monte font-medium md:text-[14px] md:mb-2  text-brand-400"> Home</li>
               <li className=" font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400 "> About</li>
@@ -780,7 +780,7 @@ function Banner() {
             </ol>
           </div>
           <div className=" sm:h-[10rem]  md:h-full md:w-1/4 flex ">
-            <ol className=" sm:justify-evenly md:justify-normal flex flex-col  font-poppins ">
+            <ol className=" sm:justify-evenly md:justify-normal flex flex-col  font-monte ">
               <li className=" font-monte font-semibold md:text-[1.2rem] md:mb-5 " >Services</li>
               <li className="  font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400 " > Web Development</li>
               <li className=" font-monte font-medium md:text-[14px] md:mb-2 text-brand-400 " > Web Design</li>
