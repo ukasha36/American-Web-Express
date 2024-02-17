@@ -3,6 +3,8 @@ import "./globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,8 +16,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-      
+      <body className={inter.className}>
+        <Navbar />
+        <main>{children}</main>  {/* Wrap page content in a main tag */}
+        <Footer />
+      </body>
     </html>
   );
 }
