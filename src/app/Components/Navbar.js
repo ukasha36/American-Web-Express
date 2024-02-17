@@ -16,7 +16,15 @@ function NavBar() {
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               {/* LOGO */}
               <Link href="/">
-                <h2 className="text-2xl text-cyan-600 font-bold "> American Web Express</h2>
+              <div className=" md:w-full flex  ">
+            <Image
+              src="/companylogo.png"
+              width={130}
+              height={90}
+              alt="logo "
+              className=" sm:w-60 sm:h-28   md:w-60 md:h-16 object-none"
+            />
+          </div>
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
@@ -50,7 +58,7 @@ function NavBar() {
                 navbar ? "p-12 md:p-0 block" : "hidden"
               }`}
             >
-              <ul className="h-screen md:h-auto items-center justify-center md:flex  ">
+              <ul className="h-screen md:h-auto items-center justify-center md:flex uppercase ">
                 <li className="pb-3  sm:text-xl md:text-lg font-sans md:text-brand-50 font-semibold sm:text-brand-200  py-2 md:px-6 text-center border-b-2 md:border-b-0    border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent navbar-link">
                   <Link href="/" onClick={() => setNavbar(!navbar)}>
                 Home

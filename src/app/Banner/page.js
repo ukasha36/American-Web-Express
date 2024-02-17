@@ -25,15 +25,15 @@ function Banner() {
       {/* Section 1  */}
       <div className=" md:flex  sm:h-[52rem] md:h-screen min-w-full md:justify-center">
         <div className=" sm:h-3/5   md:h-3/5  md:w-2/5 pt-7 flex  flex-col text-pretty justify-evenly   ">
-          <div className="flex sm:h-5  md:h-5 w-full  ">
+        <div className="flex sm:h-5  md:h-[5rem] w-[20rem] items-center ">
             <Image
-              src="/line.svg"
-              width={30}
+              src="/line2.svg"
+              width={40}
               height={10}
               alt="logo "
-              className="h-6"
+              className="h-[4rem] w-[5rem]"
             />
-            <h4 className=" font-monte "> GROUP OF PROFESSIONALS </h4>
+            <h4 className=" font-monte text-[12px] font-bold  pl-1">GROUP OF PROFEESSIONALS </h4>
           </div>
           <div className="w-full sm:h-3/4  md:h-3/6 md:flex md:flex-col justify-around pl-4 pr-3  ">
             <h1 className=" sm:text-2xl  md:text-4xl font-monte font-extrabold capitalize text-brand-400  sm:text-wrap md:text-clip md:leading-9 mb-4 ">
@@ -111,8 +111,7 @@ function Banner() {
       <div className=" flex sm:flex-col sm:justify-evenly  md:pb-10 sm:h-[100rem] md:h-[150vh] min-w-full   md:justify-around ">
         <div className="flex justify-center items-center sm:h-9 md:h-1/5 ">
           <h2 className=" sm:text-2xl  md:text-5xl font-bold font-monte  ">
-            {" "}
-            Our Work{" "}
+            Our Work 
           </h2>
         </div>
 
@@ -196,8 +195,7 @@ function Banner() {
                   className="h-10"
                 />
                 <h4 className="sm:text-2xl md:text-4xl uppercase">
-                  {" "}
-                  Web Development{" "}
+                  Web Development 
                 </h4>
               </div>
               <div className=" sm:w-5/6  md:w-2/6 flex sm:h-2/4  md:h-3/5 md:pl-12 sm:pl-4">
@@ -211,13 +209,11 @@ function Banner() {
             </div>
             <div className=" h-3/6 bg-brand-100 flex justify-between">
               <div className=" flex sm:items-end md:items-center  ml-4  sm:pb-2">
-                {" "}
                 <h1 className="text-7xl font-bold text-brand-300">01</h1>
               </div>
               <div className=" sm:w-20 md:w-1/4 h-full flex    sm:items-end md:items-center sm:pb-2 ">
                 <button>
                   <Link href="/touch">
-                    {" "}
                     <Image
                       src="/img7.jpg"
                       width={70}
@@ -256,8 +252,7 @@ function Banner() {
                   className="h-10"
                 />
                 <h4 className="sm:text-2xl md:text-4xl uppercase">
-                  {" "}
-                  Ui & Ux Design{" "}
+                  Ui & Ux Design 
                 </h4>
               </div>
               <div className=" sm:w-5/6  md:w-2/6 flex sm:h-2/4  md:h-3/5 md:pl-12 sm:pl-4">
@@ -271,13 +266,11 @@ function Banner() {
             </div>
             <div className=" h-3/6 bg-brand-100 flex justify-between">
               <div className=" flex sm:items-end md:items-center  ml-4  sm:pb-2">
-                {" "}
                 <h1 className="text-7xl font-bold text-brand-300">02</h1>
               </div>
               <div className=" sm:w-20 md:w-1/4 h-full flex    sm:items-end md:items-center sm:pb-2 ">
                 <button>
                   <Link href="/touch">
-                    {" "}
                     <Image
                       src="/img7.jpg"
                       width={70}
@@ -316,7 +309,6 @@ function Banner() {
                   className="h-10"
                 />
                 <h4 className="sm:text-2xl md:text-4xl uppercase">
-                  {" "}
                   Graphic Designing
                 </h4>
               </div>
@@ -331,13 +323,11 @@ function Banner() {
             </div>
             <div className=" h-3/6 bg-brand-100 flex justify-between">
               <div className=" flex sm:items-end md:items-center  ml-4  sm:pb-2">
-                {" "}
                 <h1 className="text-7xl font-bold text-brand-300">03</h1>
               </div>
               <div className=" sm:w-20 md:w-1/4 h-full flex    sm:items-end md:items-center sm:pb-2 ">
                 <button>
                   <Link href="/touch">
-                    {" "}
                     <Image
                       src="/img7.jpg"
                       width={70}
@@ -363,8 +353,7 @@ function Banner() {
         <SwiperSlide>
           <div className=" h-full flex flex-col">
             <div
-              className=" h-3/6 bg-brand-500 flex  flex-col md:justify-evenly
-            "
+              className=" h-3/6 bg-brand-500 flex  flex-col md:justify-evenly"
             >
               <div className="flex  items-center  sm:h-1/5  md:h-1/6  w-full  ">
                 <Image
@@ -375,8 +364,7 @@ function Banner() {
                   className="h-10"
                 />
                 <h4 className="sm:text-2xl md:text-4xl uppercase">
-                  {" "}
-                  SEO & Marketing{" "}
+                  SEO & Marketing 
                 </h4>
               </div>
               <div className=" sm:w-5/6  md:w-2/6 flex sm:h-2/4  md:h-3/5 md:pl-12 sm:pl-4">
@@ -390,13 +378,12 @@ function Banner() {
             </div>
             <div className=" h-3/6 bg-brand-100 flex justify-between">
               <div className=" flex sm:items-end md:items-center  ml-4  sm:pb-2">
-                {" "}
                 <h1 className="text-7xl font-bold text-brand-300">04</h1>
               </div>
               <div className=" sm:w-20 md:w-1/4 h-full flex    sm:items-end md:items-center sm:pb-2 ">
                 <button>
                   <Link href="/touch">
-                    {" "}
+                  
                     <Image
                       src="/img7.jpg"
                       width={70}
@@ -424,8 +411,8 @@ function Banner() {
       <div className="   sm:h-[100rem] md:h-[160vh] flex flex-col min-w-full md:mt-10 bg-brand-500 ">
         <div className=" w-full sm:h-[10rem] sm:items-center md:h-1/12 sm:justify-center flex  md:justify-center  md:pb-5">
           <h2 className=" sm:text-4xl md:text-6xl font-bold font-monte">
-            {" "}
-            Work Flow{" "}
+            
+            Work Flow 
           </h2>
         </div>
 
@@ -453,11 +440,11 @@ function Banner() {
           </div>
           <div className="  sm:h-2/5 md:w-2/5 md:h-full flex flex-col md:justify-center  ">
             <h3 className=" sm:font-semibold sm:text-center md:font-bold text-3xl mb-3 mt-3 md:text-justify text-brand-100 ">
-              Visual Design Creation{" "}
+              Visual Design Creation 
             </h3>
             <p className="sm:text-center md:text-start text-brand-50 font-monte sm:p-[0.6rem] font-medium ">
               Develop visually appealing graphics and design elements that align
-              with your brand identity and marketing goals{" "}
+              with your brand identity and marketing goals 
             </p>
           </div>
         </div>
@@ -467,8 +454,8 @@ function Banner() {
         <div className=" flex sm:h-[30rem]  sm:flex-col  md:flex-row   w-full   md:h-1/5 md:justify-center ">
           <div className=" md:w-2/5 md:h-full flex sm:flex-col   sm:h-2/5 md:justify-center ">
             <h3 className=" sm:font-semibold sm:text-center  md:font-bold text-3xl mb-3 mt-3 md:text-justify text-brand-100 ">
-              Branding Identity{" "}
-            </h3>
+              Branding Identity 
+              </h3>
             <p className="sm:text-center md:text-start text-brand-50 font-medium sm:p-[0.6rem]  font-monte ">
               Maintain consistency in branding across all digital assets,
               including logos, color schemes, typography, and imagery
@@ -535,7 +522,7 @@ function Banner() {
       <div className=" sm:flex-col  sm:h-[64rem]  sm:pb-4  md:h-[50vh] flex md:flex-row min-w-full ">
         <div className=" sm:w-full  sm:h-[20rem] sm:items-center  md:items-start sm:justify-evenly md:h-full md:w-2/5 flex flex-col md:justify-center  md:pl-10">
           <h4 className=" sm:text-4xl  md:text-3xl font-monte font-semibold">
-            {" "}
+            
             Our Clientele
           </h4>
           <p className=" sm:pl-[0.7rem] sm:pr-[0.6rem] sm:text-center md:text-left md:pl-[0rem] text-brand-50 md:pb-2 md:pt-2 font-monte font-medium">
@@ -651,7 +638,7 @@ function Banner() {
             <div className="  sm:p-4  md:h-2/4 md:w-full">
               <p className="sm:text-[1.3rem]  md:leading-tight  sm:p-3 sm:text-left  text-brand-50    md:pl-2 md:text-[1.2rem] font-medium font-monte  ">
                 Remarkably smooth working with them, and I absolutely adore
-                every design they've created for me
+                every design they created for me
               </p>
             </div>
           </div>
@@ -683,7 +670,7 @@ function Banner() {
             <div className="  sm:p-4  md:h-2/4 md:w-full">
               <p className=" sm:text-[1.3rem] md:leading-tight sm:p-3 sm:text-left  text-brand-50  md:text-left md:text-[1.1rem] font-medium md:pl-2 font-monte   ">
                 Working with them was incredibly smooth, and I absolutely adore
-                every design they created for me.{" "}
+                every design they created for me. 
               </p>
             </div>
           </div>

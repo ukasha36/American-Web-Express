@@ -13,6 +13,9 @@ module.exports = {
       listStyle: {
         none: 'none',
       },
+      backgroundImage: {
+        'hero-image': "url('/public/about5.png')",
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
           monte: ['Montserrat', "sans-serif"],
