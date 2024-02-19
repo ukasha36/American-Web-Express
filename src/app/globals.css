@@ -18,8 +18,8 @@
   .center{
     align-items: center;
   }
-  .swiper-pagination {
-    color: #D24545;
+  .swiper-pagination-bullet-active {
+    background-color: #D24545;
   }
 
   .swiper-slide {
@@ -75,4 +75,33 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.line{
+  line-height: 1.6rem !important ;
+    font-weight: 700;
+}
+input{
+  border: 1px solid #e1e1e1;
+}
+input:focus {
+outline: none;
+border:1px solid #7A7A7A  ;
+padding-left: 0.6rem;
+}
+textarea:focus {
+outline: none;
+  border:1px solid #7A7A7A  ;
+
+}
+textarea  {
+  border: 1px solid #e1e1e1;
+
+}
+select:focus{
+  outline: none;
+  border:1px solid black
+}
+select{
+  border: 1px solid #e1e1e1;
+  color: #7A7A7A;
 }
