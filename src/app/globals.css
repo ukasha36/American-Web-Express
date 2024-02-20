@@ -6,9 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
  
  
-.navbar-link:active {
-    color : #D24545 ;
-  }
+ .active {
+  color : red !important ;
+ }
   .my-custom-background {
     background-image: url('/bg1.jpg');
     background-repeat: no-repeat; /* Optional: control repetition */
@@ -99,9 +99,13 @@ textarea  {
 }
 select:focus{
   outline: none;
-  border:1px solid black
+  border:1px solid black;
 }
 select{
   border: 1px solid #e1e1e1;
   color: #7A7A7A;
+}
+.border2{
+  border:1px solid  transparent ;
+  border-radius: 20px 20px 0 0;
 }
