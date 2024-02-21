@@ -191,6 +191,169 @@ export default function About() {
       </div>
 
       {/* section 3  */}
+
+      <div className=" sm:min-w-full sm:h-[10rem] sm:justify-end  bg-brand-500  flex flex-col md:justify-evenly items-center">
+        <h2 className=" sm:text-[2rem] md:text-5xl font-monte md:tracking-[-0.1rem]">
+        Explore Our Services
+        </h2>
+        <p className=" sm:text-[1.1rem]  text-center ">
+        Inspirational designs, illustrations, and graphic elements <br/> from the best designers.
+        </p>
+      </div>
+
+      <Swiper
+        className=" sm:h-[25rem] min-w-full md:h-[60vh] bg-brand-500 md:pt-4 font-monte "
+        modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+        slidesPerView={1}
+        breakpoints={{
+          640: {
+            slidesPerView: 2, // Show 2 slides on medium screens
+            spaceBetween: 20, // Adjust spacing on medium screens
+          },
+          1024: {
+            slidesPerView: 4, // Show 3 slides on large screens
+            spaceBetween: 15, // Adjust spacing on large screens
+          },
+        }}
+        direction="horizontal" // Set direction to vertical
+        loop={true}
+        autoplay={{
+          delay: 1200,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true, // Enable pagination dots
+        }}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+       
+        
+        <SwiperSlide>
+        <div className=" sm:h-[18rem] sm:justify-evenly flex flex-col  md:w-[14rem] md:h-[18rem] md:justify-center  bg-brand-500  ">
+            <Image
+              src="/web-development.png"
+              width={300}
+              height={250}
+              alt="logo"
+              className="   sm:pb-2  md:h-[13rem] md:w-[14rem] md:object-fill   border-1 border-solid border-brand-300 rounded-lg border3 "            />
+            <div className="flex sm:h-5  md:h-[5rem] md:w-[16rem] items-center ">
+              <h4 className=" font-monte text-[12px] font-bold  pl-1">
+              Web Development
+              </h4>
+            </div>
+          </div>
+
+        </SwiperSlide>
+
+
+        <SwiperSlide>
+        <div className=" sm:h-[20rem] sm:justify-evenly flex flex-col  md:w-[14rem] md:h-[18rem] md:justify-center  bg-brand-500  ">
+            <Image
+              src="/animation.png"
+              width={300}
+              height={250}
+              alt="logo"
+              className="   sm:pb-2  md:h-[13rem] md:w-[14rem] md:object-fill   border-1 border-solid border-brand-300 rounded-lg border3 "            />
+            <div className="flex sm:h-5  md:h-[5rem] md:w-[16rem] items-center ">
+              <h4 className=" font-monte text-[12px] font-bold  pl-1">
+               Animation
+              </h4>
+            </div>
+          </div>
+
+        </SwiperSlide>
+        
+        <SwiperSlide>
+        <div className="  sm:h-[18rem] sm:justify-evenly flex flex-col md:w-[14rem] md:h-[18rem] md:justify-center  bg-brand-500  ">
+            <Image
+              src="/branding.png"
+              width={300}
+              height={250}
+              alt="logo"
+              className="   sm:pb-2  md:h-[13rem] md:w-[14rem] md:object-fill   border-1 border-solid border-brand-300 rounded-lg  border3 "            />
+            <div className="flex sm:h-5  md:h-[5rem] md:w-[16rem] items-center ">
+              <h4 className=" font-monte text-[12px] font-bold  pl-1">
+                Branding 
+              </h4>
+            </div>
+          </div>
+
+        </SwiperSlide>
+        
+        <SwiperSlide>
+        <div className="  sm:h-[18rem] sm:justify-evenly flex flex-col  md:w-[14rem] md:h-[18rem] md:justify-center  bg-brand-500  ">
+            <Image
+              src="/productdesign.jpg"
+              width={300}
+              height={250}
+              alt="logo"
+              className="   sm:pb-2  md:h-[13rem] md:w-[14rem] md:object-fill   border-1 border-solid border-brand-300 rounded-lg border3  "            />
+            <div className="flex sm:h-5  md:h-[5rem] md:w-[16rem] items-center ">
+              <h4 className=" font-monte text-[12px] font-bold  pl-1">
+              Product Design 
+              </h4>
+            </div>
+          </div>
+
+        </SwiperSlide>
+        
+        <SwiperSlide>
+        <div className=" sm:h-[18rem] sm:justify-evenly flex flex-col  md:w-[14rem] md:h-[18rem] md:justify-center  bg-brand-500  ">
+            <Image
+              src="/typography.png"
+              width={300}
+              height={250}
+              alt="logo"
+              className="    sm:h-[13rem] sm:w-[14rem] sm:object-cover sm:pb-2  md:h-[13rem] md:w-[14rem] md:object-fill   border-1 border-solid border-brand-300 rounded-lg border3  "            />
+            <div className="flex sm:h-5  md:h-[5rem] md:w-[16rem] items-center ">
+              <h4 className=" font-monte text-[12px] font-bold  pl-1">
+              Typography
+              </h4>
+            </div>
+          </div>
+
+        </SwiperSlide>
+        
+
+        <SwiperSlide>
+        <div className=" sm:h-[18rem] sm:justify-evenly flex flex-col  md:w-[14rem] md:h-[18rem] md:justify-center  bg-brand-500  ">
+            <Image
+              src="/art.jpg"
+              width={300}
+              height={250}
+              alt="logo"
+              className="   sm:pb-2  md:h-[13rem] md:w-[14rem] md:object-fill   border-1 border-solid border-brand-300 rounded-lg border3  "            />
+            <div className="flex sm:h-5  md:h-[5rem] md:w-[16rem] items-center ">
+              <h4 className=" font-monte text-[12px] font-bold  pl-1">
+               Illustration
+              </h4>
+            </div>
+          </div>
+
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className=" sm:h-[18rem] sm:justify-evenly flex flex-col  md:w-[14rem] md:h-[18rem] md:justify-center  bg-brand-500  ">
+            <Image
+              src="/webdesign.png"
+              width={300}
+              height={250}
+              alt="logo"
+              className="   sm:pb-2  md:h-[13rem] md:w-[14rem] md:object-fill   border-1 border-solid border-brand-300 rounded-lg border3  "            />
+            <div className="flex sm:h-5  md:h-[5rem] md:w-[16rem] items-center ">
+              <h4 className=" font-monte text-[12px] font-bold  pl-1">
+             Web Design
+              </h4>
+            </div>
+          </div>
+
+        </SwiperSlide>
+        
+      
+      </Swiper>
+
+
+
     </>
   );
 }

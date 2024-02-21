@@ -7,7 +7,7 @@
  
  
  .active {
-  color : red !important ;
+  color : #c61010 !important ;
  }
   .my-custom-background {
     background-image: url('/bg1.jpg');
@@ -108,4 +108,18 @@ select{
 .border2{
   border:1px solid  transparent ;
   border-radius: 20px 20px 0 0;
+}
+
+.border3{
+ border: 2px solid #e9dede;
+ border-radius: 8px;
+ padding: 0.5rem;
+}
+
+.swiper-pagination-bullet-active{
+background-color: #c61010 !important  ;
+}
+
+nav li a.active {
+   color: #c61010 !important;
 }

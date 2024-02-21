@@ -10,13 +10,15 @@ import { Component, useState } from "react";
 
 
 
-
+import { usePathname } from 'next/navigation';
+ 
 
 
 
 function NavBar() {
    const router = useRouter();
   const [navbar, setNavbar] = useState(false);
+  const pathname = usePathname();
 
   const handleNavLinkClick = () => {
     setNavbar(!navbar); // Toggle navbar state on click
@@ -73,38 +75,52 @@ function NavBar() {
               }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex capitalize  font-monte ">
-               <li className={`
+              <li className={`
           pb-3 sm:text-xl md:text-lg font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link
-          ${router.pathname === "/" ? "active " : ""}
+          ${pathname === '/' ? 'active' : ''}
         `}>
                   <Link href="/" onClick={handleNavLinkClick}>
-                Home
+                    Home
                   </Link>
-                  </li>
+                </li>
 
               <li className={`
           pb-3 sm:text-xl md:text-lg font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link
-          ${router.pathname === "/about" ? " active  " : " text-brand-200 "}
+          ${pathname === '/about' ? 'active' : ''}
         `}>
                   <Link href="/about" onClick={handleNavLinkClick}>
                     About us 
                   </Link>
                 </li>
-                <li className="pb-3 sm:text-xl md:text-lg md:text-brand-50 sm:text-brand-200 font-monte py-2 px-6 text-center font-semibold border-b-2 md:border-b-0    border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent navbar-link">
-                  <Link href="/service " onClick={() => setNavbar(!navbar)}>
-                Services
+
+                    <li className={`
+          pb-3 sm:text-xl md:text-lg font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link
+          ${pathname === '/service' ? 'active' : ''}
+        `}>
+                  <Link href="/service" onClick={handleNavLinkClick}>
+                    Services
                   </Link>
                 </li>
-                <li className="pb-3 sm:text-xl  md:text-lg md:text-brand-50  sm:text-brand-200 font-monte py-2 px-6 text-center font-semibold border-b-2 md:border-b-0   navbar-link">
-                  <Link href="/packages" onClick={() => setNavbar(!navbar)}>
-                   Portfolio
-                    </Link>
-                  </li>
-                <li className="sm:pb-2 md:pb-2 md:w-40 sm:text-xl md:text-base  py-2 px-2 text-center hover:sm:bg-brand-100  font-monte hover:text-brand-300  md:rounded-md    font-semibold md:text-brand-100   md:border md:border-solid md:border-brand-100 sm:text-brand-200   ">
-                  <Link href="/touch" onClick={() => setNavbar(!navbar)}>
-                  Get in Touch 
+
+                <li className={`
+          pb-3 sm:text-xl md:text-lg font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link
+          ${pathname === '/portfolio' ? 'active' : ''}
+        `}>
+                  <Link href="/portfolio" onClick={handleNavLinkClick}>
+                    Portfolio
                   </Link>
                 </li>
+
+                <li className={`
+          sm:pb-2 md:pb-2 md:w-40 sm:text-xl md:text-base  py-2 px-2 text-center hover:sm:bg-brand-100  font-monte hover:text-brand-300  md:rounded-md    font-semibold md:text-brand-100   md:border md:border-solid md:border-brand-100 sm:text-brand-200  
+          ${pathname === '/touch' ? 'active' : ''}
+        `}>
+                  <Link href="/touch" onClick={handleNavLinkClick}>
+                  Get in Touch
+                  </Link>
+                </li>
+                  
+            
               </ul>
             </div>
           </div>
