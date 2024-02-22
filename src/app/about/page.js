@@ -76,7 +76,7 @@ export default function About() {
                 className=" sm:w-[4rem] md:h-[4rem] md:w-[5rem]"
               />
               <h4 className=" font-monte text-[12px] font-bold  pl-4 ">
-                ABOUT US{" "}
+                ABOUT US 
               </h4>
             </div>
             <h2 className=" sm:text-xl sm:mb-[1.4rem]  md:mb-1 uppercase md:text-3xl font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9  ">
@@ -108,7 +108,7 @@ export default function About() {
               className=" sm:w-[4rem] md:h-[4rem] md:w-[5rem]"
             />
             <h4 className=" font-monte text-[13px] font-bold    ">
-              OUR VISION{" "}
+              OUR VISION
             </h4>
           </div>
           <h2 className=" sm:text-xl sm:mb-[1.4rem]  md:mb-1 uppercase md:text-[1.4rem] font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9  ">
@@ -132,7 +132,7 @@ export default function About() {
               className=" sm:w-[4rem] md:h-[4rem] md:w-[5rem]"
             />
             <h4 className=" font-monte text-[13px] font-bold    ">
-              OUR MISSION{" "}
+              OUR MISSION
             </h4>
           </div>
           <h2 className=" sm:text-xl sm:mb-[1.4rem]  md:mb-1 uppercase  md:text-[1.4rem] font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9  ">
@@ -156,7 +156,7 @@ export default function About() {
               className=" sm:w-[4rem] md:h-[4rem] md:w-[5rem]"
             />
             <h4 className=" font-monte text-[13px] font-bold    ">
-              OUR VALUE{" "}
+              OUR VALUE 
             </h4>
           </div>
           <h2 className=" sm:text-xl sm:mb-[1.4rem]  md:mb-1 uppercase  md:text-[1.4rem] font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9  ">

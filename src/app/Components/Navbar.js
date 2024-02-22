@@ -19,13 +19,15 @@ function NavBar() {
    const router = useRouter();
   const [navbar, setNavbar] = useState(false);
   const pathname = usePathname();
+  const isServicesPage = pathname === "/service";
+
 
   const handleNavLinkClick = () => {
     setNavbar(!navbar); // Toggle navbar state on click
   };
 
   return (
-    <div  className="  md:h-[5rem] min-w-full">
+    <div  className={`  md:h-[5rem] min-w-full  ${isServicesPage || pathname === '/portfolio'  || pathname === '/about' ? "md:bg-brand-100" : "bg-brand-300" } `} >
       <nav className="w-full bg-white  top-0 left-0 right-0 z-10 md:pt-2">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
@@ -38,7 +40,7 @@ function NavBar() {
               width={130}
               height={90}
               alt="logo "
-              className=" sm:w-60 sm:h-28   md:w-48 md:h-16 object-contain"
+              className=" sm:w-[10rem] sm:h-[5rem]   md:w-48 md:h-16 object-contain"
             />
           </div>
               </Link>
@@ -86,7 +88,7 @@ function NavBar() {
 
               <li className={`
           pb-3 sm:text-xl md:text-lg font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link
-          ${pathname === '/about' ? 'active' : ''}
+          ${pathname === '/about' ? 'md:text-brand-500' : ''}
         `}>
                   <Link href="/about" onClick={handleNavLinkClick}>
                     About us 
@@ -95,7 +97,7 @@ function NavBar() {
 
                     <li className={`
           pb-3 sm:text-xl md:text-lg font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link
-          ${pathname === '/service' ? 'active' : ''}
+          ${pathname === '/service' ? ' md:text-brand-500' : ''}
         `}>
                   <Link href="/service" onClick={handleNavLinkClick}>
                     Services
@@ -104,7 +106,7 @@ function NavBar() {
 
                 <li className={`
           pb-3 sm:text-xl md:text-lg font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link
-          ${pathname === '/portfolio' ? 'active' : ''}
+          ${pathname === '/portfolio' ? 'md:text-brand-500' : ''}
         `}>
                   <Link href="/portfolio" onClick={handleNavLinkClick}>
                     Portfolio
@@ -112,8 +114,8 @@ function NavBar() {
                 </li>
 
                 <li className={`
-          sm:pb-2 md:pb-2 md:w-40 sm:text-xl md:text-base  py-2 px-2 text-center hover:sm:bg-brand-100  font-monte hover:text-brand-300  md:rounded-md    font-semibold md:text-brand-100   md:border md:border-solid md:border-brand-100 sm:text-brand-200  
-          ${pathname === '/touch' ? 'active' : ''}
+          sm:pb-2 md:pb-2 md:w-40 sm:text-xl md:text-base  py-2 px-2 text-center   font-monte  hover:md:bg-brand-100   hover:md:text-brand-300  md:rounded-md    font-semibold md:text-brand-100   md:border md:border-solid md:border-brand-100 sm:text-brand-200  
+          ${pathname === '/touch' && '  ' || pathname === '/service'  && 'md:text-brand-50 md:border-brand-50' || pathname === '/portfolio'  && 'md:text-brand-50 md:border-brand-50' || pathname === '/about'  && 'md:text-brand-50 md:border-brand-50'}
         `}>
                   <Link href="/touch" onClick={handleNavLinkClick}>
                   Get in Touch

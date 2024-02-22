@@ -77,7 +77,7 @@ function Banner() {
             <h1 className="   sm:text-2xl  md:text-4xl font-monte font-extrabold capitalize text-brand-400  sm:text-balance md:text-clip sm:leading-7  md:leading-9 mb-4 ">
               Professional Tech Solutions, London
             </h1>
-            <p className="text-brand-50 sm:text-justify font-medium ">
+            <p className="text-brand-50 sm:text-justify font-medium font-monte ">
               we pride ourselves on being the foremost choice for clients
               seeking unparalleled software and marketing solutions. Our
               commitment to excellence is reflected in our continuous investment
@@ -97,13 +97,13 @@ function Banner() {
             </p>
           </div>
         </div>
-        <div className="   sm:h-11 md:h-full  md:w-5/12 md:pt-3 md:flex justify-center align-middle pl-2">
+        <div className="   sm:h-11 md:h-full  md:w-5/12 md:pt-3 md:flex justify-center items-center pl-2">
           <Image
-            src="/img8.jpeg"
+            src="/pic4.png"
             width={400}
             height={300}
             alt="logo"
-            className=" sm:h-15 md:h-96 "
+            className=" sm:h-15 md:h-[19rem]  md:w-[29rem]"
           />
         </div>
       </div>

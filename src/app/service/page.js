@@ -218,7 +218,7 @@ export default function About() {
         direction="horizontal" // Set direction to vertical
         loop={true}
         autoplay={{
-          delay: 1200,
+          delay: 1900,
           disableOnInteraction: false,
         }}
         pagination={{

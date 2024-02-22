@@ -43,9 +43,11 @@ function Footer() {
               <li className=" font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400 " > SEO & Marketing </li>
             </ol>
           </div>
+
+
           <div className=" sm:h-[15rem]  md:h-full md:w-1/4 flex">
             <ol className=" sm:justify-evenly md:justify-normal  flex flex-col ">
-              <li className=" font-monte font-semibold md:text-[1.2rem]  md:mb-5 md:mb-3 "> Contact Us </li>
+              <li className=" font-monte font-semibold md:text-[1.2rem]  md:mb-5  "> Contact Us </li>
               <li className=" md:mb-3  text-brand-400 ">
                 <div className=" flex ">
                   <Image
