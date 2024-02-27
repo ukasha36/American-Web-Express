@@ -1,14 +1,63 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+ 
 
 export default function Touch() {
   const [selectedOption, setSelectedOption] = useState("");
+  const [showModal, setShowModal] = useState(false);
+
 
   // Handler function to update selected option
   const handleSelectChange = (event) => {
     setSelectedOption(event.target.value);
   };
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState(""); // Add this line
+  const [number, setNumber] = useState("");
+  const [service, setService] = useState("");
+  const [message, setMessage] = useState("");
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      name: name,
+      email: email,
+      number: number,
+      service: service,
+      message: message,
+    };
+
+    const serviceId = "service_qgees4k";
+    const templateID = "template_8qvsgwf";
+
+
+    emailjs
+      .sendForm(serviceId, templateID, form.current, {
+          publicKey: "s7vKJDl55o-a1JLo8" ,
+        } , templateParams )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          setShowModal(true);
+          setName("")
+          setEmail("")
+          setNumber("")
+          setMessage("")
+         },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
+
 
   return (
     <>
@@ -100,61 +149,70 @@ export default function Touch() {
             </div>
           </div>
         </div>
+              {/* Form  */}
 
-        <div className=" sm:h-[58rem] sm:w-full md:w-[45%] md:h-full flex flex-col md:justify-center ">
+              <form ref={form} onSubmit={sendEmail} >      
+        <div className=" sm:h-[58rem] sm:w-full md:w-full md:h-full flex flex-col md:justify-center ">
         <div className=" sm:text-xl sm:mb-[1.4rem] sm:justify-center   flex  md:mb-1 uppercase md:text-3xl font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9  ">
             Leave a Comment
           </div>
           <div className=" sm:h-[8rem] sm:w-full sm:justify-evenly sm:flex-col md:w-full md:h-[5rem] md:justify-between items-center flex md:flex-row ">
             <input
               type="text"
-              name="text"
+              name="user_name"
+              value={name}
               id="text"
               required
-              placeholder="Full Name"
+              placeholder='Full Name'
               autoComplete="off"
-              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[18rem] md:h-[3rem] md:pl-4 "
+              onChange={(e) => { setName((e.target.value))}}
+              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[16rem] md:h-[3rem] md:pl-4 "
             />
             <input
-              type="email"
-              name="email"
-              id="email"
-              required
-              autoComplete="off"
-              placeholder=" Email "
-              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[18rem] md:h-[3rem] md:pl-4 "
+            value={email}
+            type="email"
+            name="user_email"
+            id="email"
+            required
+            autoComplete="off"
+            placeholder=' Email '
+            onChange={(e) => { setEmail((e.target.value))}}
+              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[16rem] md:h-[3rem] md:pl-4  md:ml-3"
             />
           </div>
           <div className="sm:h-[8rem] sm:w-full sm:justify-evenly sm:flex-col md:w-full md:h-[5rem] md:justify-between items-center flex md:flex-row ">
             <input
               type="text"
-              name="number"
+              name="user_number"
+              value={number}
               id="number"
-              placeholder="Phone Number"
+              placeholder='Phone Number'
               required
               autoComplete="off"
-              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[18rem] md:h-[3rem] md:pl-4 "
+              onChange={(e) => { setNumber((e.target.value))}}
+              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[16rem] md:h-[3rem] md:pl-4 "
             />
             <select
-              value={selectedOption}
-              onChange={handleSelectChange}
-              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[18rem] md:h-[3rem] md:pl-4 "
+              value={selectedOption}   onChange={handleSelectChange}   name="user_service"
+              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[16rem] md:h-[3rem] md:pl-4 "
             >
-              <option value="">Web Development</option>
-              <option value="option1"> Graphic Design</option>
-              <option value="option2">Seo & Marketing</option>
-              <option value="option3"> Social Media Marketing</option>
+              <option  name="user_service" value="Web Development">Web Development</option>
+        <option   name="user_service" value=" Graphic Design"> Graphic Design</option>
+        <option  name="user_service"  value="Seo & Marketing">Seo & Marketing</option>
+        <option  name="user_service" value="Social Media Marketing"> Social Media Marketing</option>
               {/* Add more options as needed */}
             </select>
           </div>
           <div className=" sm:h-[18rem] sm:justify-evenly sm:items-center  md:h-[26rem] md:w-full flex flex-col  md:justify-around  md:items-start ">
             <textarea
-              name="message"
-              id="message"
-              cols="20"
-              rows="7"
-              placeholder=" Project Details"
-              required
+             name="message"
+             value={message}
+             id="message"
+             cols="20"
+             rows="7"
+             placeholder=' Project Details'
+             onChange={(e) => { setMessage((e.target.value))}} 
+             required
               className=" sm:w-[18rem] md:w-full md:h-[20rem] pl-4 pt-4"
             ></textarea>
             <button
@@ -166,6 +224,16 @@ export default function Touch() {
             </button>
           </div>
         </div>
+        {showModal && (
+  <div className="fixed top-0 left-0 w-full h-full bg-brand-50 bg-opacity-50 flex justify-center items-center z-50">
+    <div className="bg-white rounded-lg p-6 shadow-xl bg-brand-100 relative md:text-[1.5rem] text-brand-300">
+      <span className="absolute top-0 right-[1rem] cursor-pointer" onClick={() => setShowModal(false)}>&times;</span>
+      <p className="text-center">Your message has been sent successfully <br></br> We will redirect to you shortly</p>
+    </div>
+  </div>
+)}
+
+        </form>
       </div>
     </>
   );

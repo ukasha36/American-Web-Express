@@ -1,16 +1,8 @@
 "use client";
 import  { useState } from 'react';
 import Image from "next/image";
-import Link from "next/link";
-import { global } from "styled-jsx/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "@fortawesome/fontawesome-free/css/all.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
 
 // Import Swiper React components
 import { Navigation, Autoplay, Pagination, Scrollbar } from "swiper/modules";
@@ -22,13 +14,72 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+const getSelectOptions = () => {
+  // Implement your logic to generate the options array
+  const options = [
+    { value: "Web Development", label: "Web Development" },
+    { value: "Graphic Design", label: "Graphic Design" },
+    { value: "Seo & Maketing", label: "Seo & Maketing" },
+    { value: "Social Media Marketing", label: "Social Media Marketing" },
+    // ... other options
+  ];
+  return options; // Return the options array
+};
+
 export default function About() {
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOption, setSelectedOption] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
   // Handler function to update selected option
   const handleSelectChange = (event) => {
     setSelectedOption(event.target.value);
   };
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState(""); // Add this line
+  const [number, setNumber] = useState("");
+  const [service, setService] = useState("");
+  const [message, setMessage] = useState("");
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      name: name,
+      email: email,
+      number: number,
+      service: service,
+      message: message,
+    };
+
+    const serviceId = "service_qgees4k";
+    const templateID = "template_8qvsgwf";
+
+    emailjs
+      .sendForm(serviceId, templateID, form.current, {
+          publicKey: "s7vKJDl55o-a1JLo8" ,
+        } , templateParams )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          setShowModal(true);
+          setName("")
+          setEmail("")
+          setNumber("")
+          setMessage("")
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
+
   return (
     <>
       <div className="bg-brand-100 flex sm:flex-col sm:items-center  sm:h-[43rem] md:flex-row md:h-screen min-w-full md:justify-evenly md:items-center">
@@ -333,6 +384,7 @@ export default function About() {
 
       {/* Form  */}
 
+
       <div className=" sm:h-[80rem]  bg-brand-100  flex justify-center items-center md:h-[150vh] min-w-full">
         <div className=" sm:h-[60rem]  sm:w-[90%]  md:h-[90%] md:w-[80%] bg-brand-500 flex flex-col sm:justify-evenly md:items-center">
           <div className=" sm:h-[20rem] sm:w-full sm:pt-[1rem]  md:h-[16rem] md:w-[90%] flex flex-col  items-center justify-center" >
@@ -346,23 +398,29 @@ export default function About() {
             </p>
           </div>
 
+          <form ref={form} onSubmit={sendEmail} >
           <div className=' sm:h-[58rem] sm:w-full md:w-full md:h-[40rem] flex flex-col '>
               <div className=' sm:h-[10rem] sm:w-full sm:flex-col md:w-full md:h-[5rem] justify-evenly items-center flex md:flex-row ' > 
               <input
                 type="text"
-                name="text"
+                name="user_name"
+                value={name}
                 id="text"
                 required
                 placeholder='Full Name'
                 autoComplete="off"
+                onChange={(e) => { setName((e.target.value))}}
+
                 className=' sm:w-[18rem] sm:h-[3rem]   md:w-[21rem] md:h-[3rem] md:pl-4 '              />
               <input
+                 value={email}
                 type="email"
-                name="email"
+                name="user_email"
                 id="email"
                 required
                 autoComplete="off"
                 placeholder=' Email '
+                onChange={(e) => { setEmail((e.target.value))}}
                 className=' sm:w-[18rem] sm:h-[3rem]   md:w-[21rem] md:h-[3rem] md:pl-4 '    
                           />
               </div>
@@ -370,36 +428,56 @@ export default function About() {
 
               <input
                 type="text"
-                name="number"
+                name="user_number"
+                value={number}
                 id="number"
                 placeholder='Phone Number'
                 required
                 autoComplete="off"
+                onChange={(e) => { setNumber((e.target.value))}}
                 className=' sm:w-[18rem] sm:h-[3rem]   md:w-[21rem] md:h-[3rem] md:pl-4 '    
               />
-             <select value={selectedOption} onChange={handleSelectChange}     className=' sm:w-[18rem] sm:h-[3rem]   md:w-[21rem] md:h-[3rem] md:pl-4 '    >
-        <option value="">Web Development</option>
-        <option value="option1"> Graphic Design</option>
-        <option value="option2">Seo & Marketing</option>
-        <option value="option3"> Social Media Marketing</option>
-        {/* Add more options as needed */}
-      </select>
+            <select
+  value={selectedOption}
+  onChange={handleSelectChange}
+  name="user_service"
+  className=' sm:w-[18rem] sm:h-[3rem]   md:w-[21rem] md:h-[3rem] md:pl-4 ' 
+>
+  {getSelectOptions().map((option) => (
+    <option key={option.value} value={option.value}>
+      {option.label}
+    </option>
+  ))}
+</select>
               </div>
               <div className=' sm:h-[20rem] sm:justify-evenly sm:items-center  md:h-[26rem] md:w-full flex flex-col  md:justify-around  md:items-center'> 
               <textarea
                 name="message"
+                value={message}
                 id="message"
                 cols="20"
                 rows="7"
                 placeholder=' Project Details'
+                onChange={(e) => { setMessage((e.target.value))}} 
                 required
                  className=' sm:w-[18rem] md:w-[46rem] md:h-[20rem] pl-4 pt-4'
               ></textarea>
-              <button type='submit' className="sm:pb-2 md:pb-2 md:w-40 sm:text-[12px]  sm:w-[9rem] md:text-base   py-2 px-2 text-center uppercase   font-monte     font-semibold    border md:border-solid border-brand-700    " > Contact US </button>
+              <button type='submit'  value="Send"    className="sm:pb-2 md:pb-2 md:w-40 sm:text-[12px]  sm:w-[9rem] md:text-base   py-2 px-2 text-center uppercase   font-monte     font-semibold    border md:border-solid border-brand-700    "  > Contact US </button>
               </div>
           </div>
+          {showModal && (
+  <div className="fixed top-0 left-0 w-full h-full bg-brand-50 bg-opacity-50 flex justify-center items-center z-50">
+    <div className="bg-white rounded-lg p-6 shadow-xl bg-brand-100 relative md:text-[1.5rem] text-brand-300">
+      <span className="absolute top-0 right-[1rem] cursor-pointer" onClick={() => setShowModal(false)}>&times;</span>
+      <p className="text-center">Your message has been sent successfully <br></br> We will redirect to you shortly</p>
+    </div>
+  </div>
+)}
+          </form>
         </div>
       </div>
+    
+
     </>
   );
 }

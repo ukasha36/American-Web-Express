@@ -124,3 +124,7 @@ background-color: #c61010 !important  ;
 nav li a.active {
    color: #c61010 !important;
 }
+.background{
+  background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 12%, rgba(253,29,29,1) 69%, rgba(252,176,69,1) 99%);
+}
