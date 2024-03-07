@@ -49,7 +49,7 @@ export default function Packages() {
                  
 
         <div className="flex-grow  sm:pl-[0.5rem]  xl:px-8 pt-8   xl:justify-center xl:h-[15rem]  xl:items-center">
-          <div className="flex items-center mb-8 sm:flex-col md:flex ">
+          <div className=" items-center mb-8 sm:flex-col flex  md:flex-row md:justify-center ">
             <button
               onClick={() => handleTabClick("website")}
               className={`mr-4 px-4 py-2 rounded-md text-sm font-medium xl:w-40 xl:h-12  xl:text-[1.5rem] ${

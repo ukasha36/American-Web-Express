@@ -28,8 +28,8 @@ function Banner() {
     <>
       {/* Section 1  */}
       <div className="  md:flex  sm:h-[52rem] md:h-screen min-w-full md:justify-center xl:items-center xl:h-[75vh]">
-        <div className=" sm:h-3/5   md:h-3/5  md:w-2/5  xl:h-[75%] xl:w-[38%]    pt-7 flex  flex-col text-pretty md:justify-evenly  xl:justify-center ">
-          <div className="flex sm:h-5  md:h-[5rem] w-[20rem] items-center xl:w-[23rem]">
+        <div className=" sm:h-3/5   md:h-3/5  md:w-2/5  xl:h-[75%] xl:w-[38%]  sm:justify-center  pt-7 flex  flex-col text-pretty md:justify-evenly  xl:justify-center ">
+          <div className="flex sm:h-5 sm:mb-[1rem] md:h-[5rem] w-[20rem] items-center xl:w-[23rem] ">
             <Image
               src="/line2.svg"
               width={40}
@@ -38,8 +38,8 @@ function Banner() {
               className="h-[4rem] w-[5rem]"
             />
             <h4 className=" font-monte text-[12px] font-bold  pl-1 xl:text-[1.1rem] ">
-              {" "}
-              GROUP OF PROFEESSIONALS{" "}
+             
+              GROUP OF PROFESSIONALS
             </h4>
           </div>
           <div className="w-full sm:h-3/4  md:h-3/6 md:flex md:flex-col justify-around pl-4 pr-3  ">
@@ -52,7 +52,7 @@ function Banner() {
               in creating powerful software applications web development, social
               media marketing and content marketing etc.
             </p>
-            <button className="sm:pb-2 md:pb-2 md:w-40 sm:text-xl md:text-base 1920:text-[1.3rem]  1920:pt-[0.7rem] 1920:pb-[0.7rem] sm:py-2 sm:px-2 text-center hover:sm:bg-brand-100  font-monte hover:text-brand-300  rounded-md    font-medium text-brand-100   border md:border-solid border-brand-100  xl:text-[1.3rem]  ">
+            <button className="sm:pb-[0.3rem] sm:pt-[0.3rem] sm:text-[1.1rem] md:pb-2 md:w-40 sm:text-xl md:text-base 1920:text-[1.3rem]  1920:pt-[0.7rem] 1920:pb-[0.7rem] sm:py-2 sm:px-2 text-center hover:sm:bg-brand-100  font-monte hover:text-brand-300  rounded-md    font-medium text-brand-100   border md:border-solid border-brand-100  xl:text-[1.3rem]  ">
               <Link href="/about">Read More</Link>
             </button>
           </div>

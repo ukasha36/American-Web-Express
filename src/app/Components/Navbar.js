@@ -27,7 +27,7 @@ function NavBar() {
   };
 
   return (
-    <div  className={`  md:h-[6rem] min-w-full  ${ pathname === '/portfolio'  ? "bg-brand-300" : "bg-brand-300" } `} >
+    <div  className={`  md:h-[5rem] min-w-full  ${ pathname === '/portfolio'  ? "bg-brand-300" : "bg-brand-300" } `} >
       <nav className="w-full bg-white  top-0 left-0 right-0 z-10 md:pt-2">
         <div className="justify-between px-4 mx-auto  1920:max-w-[123rem] md:items-center md:flex md:px-8 xl:h-[6rem] ">
           <div>

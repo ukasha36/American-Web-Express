@@ -14,20 +14,20 @@ function Footer() {
     <>
      <div className=" sm:h-[55rem] min-w-full md:h-[60vh] bg-brand-500   ">
         <div className=" md:h-2/5  w-full  flex md:justify-between">
-          <div className=" md:w-full flex  ">
+          <div className=" md:w-full flex sm:pl-[1rem] ">
             <Image
               src="/companylogo.png"
               width={150}
               height={120}
               alt="logo "
-              className=" sm:w-60 sm:h-28   md:w-80 md:h-28 object-none"
+              className=" sm:w-[10rem] sm:h-[7rem]   md:w-80 md:h-28 sm:object-contain"
             />
           </div>
         </div>
         <div className="  sm:flex-col sm:pl-4 md:pl-1 md:h-2/4  w-full  flex md:flex-row md:justify-evenly ">
-        <div className=" sm:h-[10rem]  md:h-full md:w-1/4 flex justify-center ">
+        <div className=" sm:h-[13rem] sm:justify-start md:h-full md:w-1/4 flex md:justify-center ">
             <ol className=" sm:justify-evenly md:justify-normal flex flex-col  font-monte ">
-              <li className=" font-monte font-semibold md:text-[1.2rem] md:mb-5 xl:text-[2rem] " >Quick Links</li>
+              <li className=" sm:text-[1.2rem] font-monte font-semibold md:text-[1.2rem] md:mb-5 xl:text-[2rem] " >Quick Links</li>
               <li className="  font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400  xl:text-[1.3rem] " > Home</li>
               <li className=" font-monte font-medium md:text-[14px] md:mb-2 text-brand-400 xl:text-[1.3rem] " > About Us </li>
               <li className=" font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400 xl:text-[1.3rem] " > Services</li>
@@ -35,9 +35,9 @@ function Footer() {
               <li className=" font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400 xl:text-[1.3rem] " > Contact Us</li>
             </ol>
           </div>
-          <div className=" sm:h-[10rem]  md:h-full md:w-1/4 flex ">
+          <div className=" sm:h-[13rem]  md:h-full md:w-1/4 flex ">
             <ol className=" sm:justify-evenly md:justify-normal flex flex-col  font-monte ">
-              <li className=" font-monte font-semibold md:text-[1.2rem] md:mb-5 xl:text-[2rem] " >Services</li>
+              <li className=" sm:text-[1.2rem] font-monte font-semibold md:text-[1.2rem] md:mb-5 xl:text-[2rem] " >Services</li>
               <li className="  font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400  xl:text-[1.3rem] " > Web Development</li>
               <li className=" font-monte font-medium md:text-[14px] md:mb-2 text-brand-400  xl:text-[1.3rem] " > Web Design</li>
               <li className=" font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400  xl:text-[1.3rem] " > Graphic Design</li>
