@@ -20,7 +20,7 @@ function Footer() {
               width={150}
               height={120}
               alt="logo "
-              className=" sm:w-[10rem] sm:h-[7rem]   md:w-80 md:h-28 sm:object-contain"
+              className=" sm:w-[10rem] sm:h-[7rem]   md:w-[13rem] md:h-28 sm:object-contain"
             />
           </div>
         </div>
@@ -57,7 +57,7 @@ function Footer() {
                     height={80}
                     alt="logo "
                     className=" sm:h-[2.5rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-2 xl:w-12  xl:h-10 "
-                  />{" "}
+                  /> 
                   <p className="xl:text-[1.3rem] " > Suite 1149 Unit 3A, 34-35 Hatton Garden, Holborn, London 
                    UK</p> 
                 </div>
@@ -70,7 +70,7 @@ function Footer() {
                     height={80}
                     alt="logo "
                     className=" sm:h-[2.5rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-1 xl:w-12  xl:h-10 "
-                  />{" "}
+                  /> 
                 <p className="xl:text-[1.3rem] " >  +11122244455</p>
                 </div>
               </li>
@@ -82,8 +82,8 @@ function Footer() {
                     height={80}
                     alt="logo "
                     className=" sm:h-[2.5rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-1 xl:w-12  xl:h-10 "
-                  />{" "}
-                 <p className="xl:text-[1.3rem] " >  hello@awh.com</p>
+                  /> 
+                 <p className="xl:text-[1.3rem] " > info@americanwebexpress.com</p>
                 </div>
               </li>
             </ol>
