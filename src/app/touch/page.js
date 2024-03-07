@@ -63,7 +63,7 @@ export default function Touch() {
     <>
       <div className="bg-brand-100 flex  sm:flex-col-reverse sm:h-[20rem] sm:items-center  relative md:flex-row md:h-[70vh] min-w-full md:justify-around md:items-center">
         <div className="  sm:flex sm:flex-col-reverse   sm:justify-evenly sm:items-start  sm:pl-4  md:pl-0  md:h-full  md:w-[0%] md:pt-3 md:flex md:justify-start  md:items-end ">
-          <h2 className=" sm:left-4 sm:top-[12rem] sm:z-10 md:top-[17rem]   sm:text-[2.1rem] sm:mb-[1.4rem] sm:text-center absolute  md:bottom-[1rem] md:left-[2rem]  uppercase md:text-7xl md:text-left  font-monte font-extrabold   text-brand-500  sm:text-wrap md:text-clip   ">
+          <h2 className=" sm:left-4 sm:top-[12rem] sm:z-10 md:top-[17rem]   sm:text-[2.1rem] sm:mb-[1.4rem] sm:text-center absolute  md:bottom-[1rem] md:left-[2rem]  uppercase md:text-7xl md:text-left  font-monte font-extrabold   text-brand-500  sm:text-wrap md:text-clip xl:top-[30rem]  xl:text-[6.5rem] ">
             Contact US
           </h2>
         </div>
@@ -80,14 +80,14 @@ export default function Touch() {
 
       {/* section 2  */}
 
-      <div className=" sm:h-[85rem] sm:flex-col sm:items-center  flex  md:flex-row md:justify-around  md:items-center md:h-[150vh] min-w-full">
+      <div className=" sm:h-[85rem] sm:flex-col sm:items-center  flex  md:flex-row md:justify-around  md:items-center md:h-[150vh] min-w-full    xl:h-[115vh] ">
 
         {/* Section 1  */}
         <div className=" sm:items-center  md:w-[40%] md:h-full flex flex-col md:justify-center ">
 
           {/* Section 1  */}
         
-          <div className=" sm:h-[24rem] sm:w-[90%] sm:justify-end    md:w-full md:h-[35%] flex flex-col">
+          <div className=" sm:h-[24rem] sm:w-[90%] sm:justify-end    md:w-full md:h-[35%] flex flex-col xl:h-[45%] xl:justify-center ">
             <div className="flex sm:h-5 sm:mb-4 md:h-[5rem] w-[20rem] items-center ">
               <Image
                 src="/line2.svg"
@@ -96,14 +96,14 @@ export default function Touch() {
                 alt="logo "
                 className=" sm:w-[4rem] md:h-[4rem] md:w-[5rem]"
               />
-              <h4 className=" font-monte text-[13px] font-bold    ">
+              <h4 className=" font-monte text-[13px] font-bold   xl:text-[1.5rem] ">
                 EXPERTS IN FIELD
               </h4>
             </div>
-            <h2 className=" sm:text-xl sm:mb-[1.4rem]  md:mb-1 uppercase md:text-[1.4rem] font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9  ">
+            <h2 className=" sm:text-xl sm:mb-[1.4rem]  md:mb-1 uppercase md:text-[1.4rem] font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9 xl:text-[3rem] xl:leading-[3.5rem] xl:mb-[1rem] ">
               Reach Out to Our Experts <br/> for Your Digital Solutions
             </h2>
-            <p className=" sm:text-[0.8rem]  line mb-4 text-brand-50 font-monte   sm:text-left md:text-[14px]  md:font-medium  ">
+            <p className=" sm:text-[0.8rem]  line mb-4 text-brand-50 font-monte   sm:text-left md:text-[14px]  md:font-medium  xl:text-[1.2rem] ">
               Our team of experts specializes in web development, web design,
               graphics, SEO, and marketing. Contact us today for tailored
               solutions that will optimize your business growth. Dont miss out
@@ -115,45 +115,45 @@ export default function Touch() {
           {/* Section 2  */}
           <div className=" sm:h-[18rem]  sm:pl-[0.5rem] md:h-[10rem] justify-evenly md:w-full flex flex-col">
         
-            <div className=" flex ">
+            <div className=" flex xl:items-center xl:mb-[1rem] ">
               <Image
                 src="/location.svg"
                 width={100}
                 height={80}
                 alt="logo "
-                className=" sm:h-[2rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-2 "
+                className=" sm:h-[2rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-2 xl:h-16 xl:w-12 "
               />
-              Suite 1149 Unit 3A, 34-35 Hatton Garden, Holborn, London UK
+            <p className=" xl:text-[1.2rem]">  Suite 1149 Unit 3A, 34-35 Hatton Garden, Holborn, London UK  </p>
             </div>
 
-            <div className=" flex ">
+            <div className=" flex xl:items-center xl:mb-[1rem] ">
               <Image
                 src="/phone.svg"
                 width={100}
                 height={80}
                 alt="logo "
-                className=" sm:h-[2rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-1 "
+                className=" sm:h-[2rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-1 xl:h-16 xl:w-12 "
               /> 
-              +11122244455
+             <p className=" xl:text-[1.2rem]">+1 8186509785</p> 
             </div>
 
-            <div className=" flex ">
+            <div className=" flex xl:items-center xl:mb-[1rem] ">
               <Image
                 src="/mail.svg"
                 width={100}
                 height={80}
                 alt="logo "
-                className=" sm:h-[2rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-1"
+                className=" sm:h-[2rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-1 xl:h-16 xl:w-12 "
               /> 
-              hello@awh.com
+             <p className=" xl:text-[1.2rem]"> americanwebexpress@gmail.com </p>
             </div>
           </div>
         </div>
               {/* Form  */}
 
-              <form ref={form} onSubmit={sendEmail} >      
+              <form ref={form} onSubmit={sendEmail} className=" xl:w[40%] "  >      
         <div className=" sm:h-[58rem] sm:w-full md:w-full md:h-full flex flex-col md:justify-center ">
-        <div className=" sm:text-xl sm:mb-[1.4rem] sm:justify-center   flex  md:mb-1 uppercase md:text-3xl font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9  ">
+        <div className=" sm:text-xl sm:mb-[1.4rem] sm:justify-center   flex  md:mb-1 uppercase md:text-3xl font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9 xl:justify-start xl:text-[2.5rem] ">
             Leave a Comment
           </div>
           <div className=" sm:h-[8rem] sm:w-full sm:justify-evenly sm:flex-col md:w-full md:h-[5rem] md:justify-between items-center flex md:flex-row ">
@@ -166,7 +166,7 @@ export default function Touch() {
               placeholder='Full Name'
               autoComplete="off"
               onChange={(e) => { setName((e.target.value))}}
-              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[16rem] md:h-[3rem] md:pl-4 "
+              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[16rem] md:h-[3rem] md:pl-4 xl:w-[20rem] xl:text-[1.3rem] "
             />
             <input
             value={email}
@@ -177,7 +177,7 @@ export default function Touch() {
             autoComplete="off"
             placeholder=' Email '
             onChange={(e) => { setEmail((e.target.value))}}
-              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[16rem] md:h-[3rem] md:pl-4  md:ml-3"
+              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[16rem] md:h-[3rem] md:pl-4  md:ml-3 xl:w-[20rem] xl:text-[1.3rem] "
             />
           </div>
           <div className="sm:h-[8rem] sm:w-full sm:justify-evenly sm:flex-col md:w-full md:h-[5rem] md:justify-between items-center flex md:flex-row ">
@@ -190,11 +190,11 @@ export default function Touch() {
               required
               autoComplete="off"
               onChange={(e) => { setNumber((e.target.value))}}
-              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[16rem] md:h-[3rem] md:pl-4 "
+              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[16rem] md:h-[3rem] md:pl-4 xl:w-[20rem] xl:text-[1.3rem] "
             />
             <select
               value={selectedOption}   onChange={handleSelectChange}   name="user_service"
-              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[16rem] md:h-[3rem] md:pl-4 "
+              className=" sm:w-[18rem] sm:h-[3rem]   md:w-[16rem] md:h-[3rem] md:pl-4 xl:w-[20rem] "
             >
               <option  name="user_service" value="Web Development">Web Development</option>
         <option   name="user_service" value=" Graphic Design"> Graphic Design</option>
@@ -213,11 +213,11 @@ export default function Touch() {
              placeholder=' Project Details'
              onChange={(e) => { setMessage((e.target.value))}} 
              required
-              className=" sm:w-[18rem] md:w-full md:h-[20rem] pl-4 pt-4"
+              className=" sm:w-[18rem] md:w-full md:h-[20rem] pl-4 pt-4 xl:text-[1.3rem]  "
             ></textarea>
             <button
               type="submit"
-              className="sm:pb-2 md:pb-2 md:w-40 sm:text-[12px]  sm:w-[9rem] md:text-base   py-2 px-2 text-center uppercase   font-monte     font-semibold    border md:border-solid border-brand-700    "
+              className="sm:pb-2 md:pb-2 md:w-40 sm:text-[12px]  sm:w-[9rem] md:text-base   py-2 px-2 text-center uppercase   font-monte     font-semibold    border md:border-solid border-brand-700   xl:text-[1.3rem] xl:p-[1rem] xl:w-[13rem] "
             >
           
               Contact US

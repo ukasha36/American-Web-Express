@@ -37,11 +37,12 @@ module.exports = {
     },
     screens: {
       sm: '340px',
-      md: '800px', // Change to '850px'
+      md: '850px', // Change to '850px'
       lg: '1024px',
-      xl: '1280px',
+      xl: '1920px',
       '2xl': '1536px',
       'tailwind' : '450',
+      '': '1920px'
     },
   },
   plugins: [],

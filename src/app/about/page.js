@@ -3,16 +3,11 @@ import  { useState } from 'react';
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "@fortawesome/fontawesome-free/css/all.css";
+import Slider from '../Components/slider';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-// Import Swiper React components
-import { Navigation, Autoplay, Pagination, Scrollbar } from "swiper/modules";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/bundle";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
@@ -29,7 +24,11 @@ const getSelectOptions = () => {
   return options; // Return the options array
 };
 
+ 
+ 
+
 export default function About() {
+
   const [selectedOption, setSelectedOption] = useState("");
   const [showModal, setShowModal] = useState(false);
 
@@ -82,12 +81,12 @@ export default function About() {
 
   return (
     <>
-      <div className="bg-brand-100 flex sm:flex-col sm:items-center  sm:h-[43rem] md:flex-row md:h-screen min-w-full md:justify-evenly md:items-center">
-        <div className="sm:h-3/5 sm:w-11/12 sm:justify-center md:h-3/5  md:w-2/5 pt-7 flex  flex-col text-pretty md:justify-evenly ">
-          <h2 className=" sm:text-5xl sm:mb-[1.4rem]  md:mb-1 uppercase md:text-7xl font-monte font-extrabold   text-brand-500  sm:text-wrap md:text-clip md:leading-9  ">
+      <div className="bg-brand-100 flex sm:flex-col sm:items-center  sm:h-[43rem] md:flex-row md:h-screen min-w-full md:justify-evenly md:items-center xl:h-[75vh]  ">
+        <div className="sm:h-3/5 sm:w-11/12 sm:justify-center md:h-3/5  md:w-2/5 pt-7 flex  flex-col text-pretty md:justify-evenly "    >
+          <h2 className=" sm:text-5xl sm:mb-[1.4rem]  md:mb-1 uppercase md:text-7xl font-monte font-extrabold   text-brand-500  sm:text-wrap md:text-clip md:leading-9 xl:text-[8rem] "   >
             About US
           </h2>
-          <p className=" sm:text-[0.8rem] md:text-lg   leading-6 mb-4 text-brand-500 font-monte   sm:text-justify  ">
+          <p className=" sm:text-[0.8rem] md:text-lg   leading-6 mb-4 text-brand-500 font-monte   sm:text-justify xl:text-[1.4rem] ">
             American Web Express offers a combination of web design and SEO
             services, helping businesses of all sizes achieve online success.
             Our team combines creative expertise with data-driven strategies to
@@ -102,7 +101,7 @@ export default function About() {
             width={500}
             height={400}
             alt="logo"
-            className=" md:h-[20rem] md:w-[35rem] "
+            className=" md:h-[20rem] md:w-[35rem]  xl:w-[45rem] xl:h-[30rem] "
           />
         </div>
       </div>
@@ -111,14 +110,14 @@ export default function About() {
 
       <div className="  sm:h-[43rem] md:h-[120vh]  min-w-full flex md:justify-center  md:items-center">
         <div
-          className=" sm:bg-contain sm:flex sm:justify-center sm:h-[70rem] md:block md:bg-cover bg-left bg-no-repeat md:w-[60rem] md:h-4/5"
+          className=" sm:bg-contain sm:flex sm:justify-center sm:h-[70rem] md:block md:bg-cover bg-left bg-no-repeat md:w-[60rem] md:h-4/5 xl:w-[95rem] " 
           style={{
             backgroundImage: "url('/about6.jpg')",
             backgroundPosition: "center", // Center the background image
           }}
         >
-          <div className="  sm:w-[90%] sm:h-[26rem] sm:static  md:absolute bg-brand-300    sm:justify-evenly md:h-[30rem]  md:w-[26rem] pt-7 flex  flex-col text-pretty md:justify-evenly ">
-            <div className="flex sm:h-5  md:h-[5rem] w-[20rem] items-center ">
+          <div className="  sm:w-[90%] sm:h-[26rem] sm:static  md:absolute bg-brand-300    sm:justify-evenly md:h-[30rem]  md:w-[26rem] pt-7 flex  flex-col text-pretty md:justify-evenly xl:w-[40rem] xl:h-[40rem] xl:justify-center  ">
+            <div className="flex sm:h-5  md:h-[5rem] w-[20rem] items-center xl:pl-[0.7rem]">
               <Image
                 src="/line2.svg"
                 width={40}
@@ -126,14 +125,14 @@ export default function About() {
                 alt="logo "
                 className=" sm:w-[4rem] md:h-[4rem] md:w-[5rem]"
               />
-              <h4 className=" font-monte text-[12px] font-bold  pl-4 ">
+              <h4 className=" font-monte text-[12px] font-bold  pl-4 xl:text-[1.5rem] ">
                 ABOUT US 
               </h4>
             </div>
-            <h2 className=" sm:text-xl sm:mb-[1.4rem]  md:mb-1 uppercase md:text-3xl font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9  ">
+            <h2 className=" sm:text-xl sm:mb-[1.4rem]  md:mb-1 uppercase md:text-3xl font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9 xl:text-[3rem] xl:pb-[1rem] xl:leading-[2.7rem]  xl:pl-[0.7rem]  ">
               Craft Your Unique Web Creation
             </h2>
-            <p className=" sm:text-[0.8rem] md:text-sm   leading-6 mb-4 text-brand-50 font-monte   sm:text-left  ">
+            <p className=" sm:text-[0.8rem] md:text-sm   leading-6 mb-4 text-brand-50 font-monte   sm:text-left xl:text-[1.4rem] xl:leading-[2rem] xl:pl-[0.7rem] ">
               Embrace the digital era and make your mark with a website that
               goes beyond the ordinary. American Web Express offers innovative
               tools and professional support to help you create a stunning
@@ -149,7 +148,7 @@ export default function About() {
       {/* section 3  */}
 
       <div className=" sm:h-[69rem]  sm:items-center  sm:flex-col md:h-[70vh] md:min-w-full md:flex-row flex justify-evenly ">
-        <div className=" sm:h-[22rem] sm:w-[90%] sm:justify-evenly   md:w-[25%] md:h-full flex flex-col">
+        <div className=" sm:h-[22rem] sm:w-[90%] sm:justify-evenly   md:w-[25%] md:h-full flex flex-col xl:justify-center  ">
           <div className="flex sm:h-5  md:h-[5rem] w-[20rem] items-center ">
             <Image
               src="/line2.svg"
@@ -158,14 +157,14 @@ export default function About() {
               alt="logo "
               className=" sm:w-[4rem] md:h-[4rem] md:w-[5rem]"
             />
-            <h4 className=" font-monte text-[13px] font-bold    ">
+            <h4 className=" font-monte text-[13px] font-bold  xl:text-[1.3rem]   ">
               OUR VISION
             </h4>
           </div>
-          <h2 className=" sm:text-xl sm:mb-[1.4rem]  md:mb-1 uppercase md:text-[1.4rem] font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9  ">
+          <h2 className=" sm:text-xl sm:mb-[1.4rem]  md:mb-1 uppercase md:text-[1.4rem] font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9 xl:text-[1.8rem] xl:pb-[1rem]  ">
             Follow the Digital Trends & Lead the Changes
           </h2>
-          <p className=" sm:text-[0.8rem]  line mb-4 text-brand-50 font-monte   sm:text-left md:text-sm   ">
+          <p className=" sm:text-[0.8rem]  line mb-4 text-brand-50 font-monte   sm:text-left md:text-sm xl:text-[1.1rem]  ">
             American Web Express to empower online businesses in a world
             brimming with prosperity, connectivity, growth, and purpose. With
             our Web and SEO expertise we are dedicated to delivering tangible
@@ -173,7 +172,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className=" sm:h-[22rem] sm:w-[90%] sm:justify-evenly   md:w-[25%] md:h-full flex flex-col">
+        <div className=" sm:h-[22rem] sm:w-[90%] sm:justify-evenly   md:w-[25%] md:h-full flex flex-col  xl:justify-center  ">
           <div className="flex sm:h-5  md:h-[5rem] w-[20rem] items-center ">
             <Image
               src="/line2.svg"
@@ -182,14 +181,14 @@ export default function About() {
               alt="logo "
               className=" sm:w-[4rem] md:h-[4rem] md:w-[5rem]"
             />
-            <h4 className=" font-monte text-[13px] font-bold    ">
+            <h4 className=" font-monte text-[13px] font-bold xl:text-[1.3rem]   ">
               OUR MISSION
             </h4>
           </div>
-          <h2 className=" sm:text-xl sm:mb-[1.4rem]  md:mb-1 uppercase  md:text-[1.4rem] font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9  ">
+          <h2 className=" sm:text-xl sm:mb-[1.4rem]  md:mb-1 uppercase  md:text-[1.4rem] font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9 xl:text-[1.8rem] xl:pb-[1rem]  ">
             The Biggest World Brands Always Take Risks
           </h2>
-          <p className=" sm:text-[0.8rem]  line mb-4 text-brand-50 font-monte   sm:text-left md:text-sm   ">
+          <p className=" sm:text-[0.8rem]  line mb-4 text-brand-50 font-monte   sm:text-left md:text-sm xl:text-[1.1rem]  ">
             We aim to establish ourselves as the premier digital marketing
             agency in the UK. Our commitment is to provide businesses with
             unparalleled and distinctive strategies, enabling them to fully
@@ -197,7 +196,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className=" sm:h-[22rem] sm:w-[90%] sm:justify-evenly   md:w-[25%] md:h-full flex flex-col">
+        <div className=" sm:h-[22rem] sm:w-[90%] sm:justify-evenly   md:w-[25%] md:h-full flex flex-col xl:justify-center ">
           <div className="flex sm:h-5  md:h-[5rem] w-[20rem] items-center ">
             <Image
               src="/line2.svg"
@@ -206,14 +205,14 @@ export default function About() {
               alt="logo "
               className=" sm:w-[4rem] md:h-[4rem] md:w-[5rem]"
             />
-            <h4 className=" font-monte text-[13px] font-bold    ">
+            <h4 className=" font-monte text-[13px] font-bold  xl:text-[1.3rem]  ">
               OUR VALUE 
             </h4>
           </div>
-          <h2 className=" sm:text-xl sm:mb-[1.4rem]  md:mb-1 uppercase  md:text-[1.4rem] font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9  ">
+          <h2 className=" sm:text-xl sm:mb-[1.4rem]  md:mb-1 uppercase  md:text-[1.4rem] font-monte font-extrabold    text-brand-400  sm:text-wrap md:text-clip md:leading-9 xl:text-[1.8rem] xl:pb-[1rem]  ">
             Lets Boost Your Business & Grow Together
           </h2>
-          <p className=" sm:text-[0.8rem]  line mb-4 text-brand-50 font-monte   sm:text-left md:text-sm   ">
+          <p className=" sm:text-[0.8rem]  line mb-4 text-brand-50 font-monte   sm:text-left md:text-sm  xl:text-[1.1rem] ">
             We are committed to propelling your business forward and fostering
             growth together. Through our tailored digital marketing solutions,
             we elevate your online presence, boost conversions, and unlock the
@@ -222,183 +221,25 @@ export default function About() {
         </div>
       </div>
 
-      <div className=" sm:min-w-full sm:h-[6rem]  bg-brand-500  flex justify-center items-end">
-        <h2 className=" sm:text-5xl font-monte">Reviews</h2>
-      </div>
-
-      <Swiper
-        className=" sm:h-[35rem] min-w-full md:h-[60vh] bg-brand-500 md:pt-4 font-monte "
-        modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-        slidesPerView={1}
-        breakpoints={{
-          640: {
-            slidesPerView: 2, // Show 2 slides on medium screens
-            spaceBetween: 20, // Adjust spacing on medium screens
-          },
-          1024: {
-            slidesPerView: 3, // Show 3 slides on large screens
-            spaceBetween: 15, // Adjust spacing on large screens
-          },
-        }}
-        direction="horizontal" // Set direction to vertical
-        loop={true}
-        autoplay={{
-          delay: 2200,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true, // Enable pagination dots
-        }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-      >
-        <SwiperSlide>
-          <div className=" sm:w-[22rem]   md:m-1 sm:h-[20rem] md:w-[20rem] md:h-[15rem]  bg-brand-300 md:ml-10 flex flex-col border-full ">
-            <div className="md:h-2/5 md:w-full flex justify-between border-bottom">
-              <div className=" sm:pl-3  flex flex-col justify-center md:w-32 md:items-center">
-                <h3 className="sm:text-xl md:text-base"> Evanna Lynch </h3>
-                <Image
-                  src="/reviews.png"
-                  width={100}
-                  height={80}
-                  alt="logo "
-                  className=" sm:h-[2.5rem] "
-                />
-              </div>
-              <div className=" flex h-full w-24">
-                <Image
-                  src="/client3.png"
-                  width={150}
-                  height={120}
-                  alt="logo "
-                  className=" sm:w-60 sm:h-32   md:h-24 md:w-32 object-none"
-                />
-              </div>
-            </div>
-            <div className="  sm:p-4  md:h-2/4 md:w-full">
-              <p className="sm:text-[1.3rem]  md:leading-tight  sm:p-3 sm:text-left  text-brand-50    md:pl-2 md:text-[1.2rem] font-medium font-monte  ">
-                Remarkably smooth working with them, and I absolutely adore
-                every design they created for me
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className=" sm:w-[22rem] sm:h-[20rem] md:w-[20rem] md:h-[15rem]  bg-brand-300 md:ml-10 flex flex-col border-full ">
-            <div className="md:h-2/5 md:w-full flex justify-between border-bottom">
-              <div className=" sm:pl-3 md:pl-2  flex flex-col justify-center md:w-32 md:items-center">
-                <h3 className="sm:text-xl md:text-base"> Cidalia </h3>
-                <Image
-                  src="/reviews.png"
-                  width={100}
-                  height={80}
-                  alt="logo "
-                  className=" sm:h-[2.5rem] "
-                />
-              </div>
-              <div className=" flex h-full w-24">
-                <Image
-                  src="/client3.png"
-                  width={150}
-                  height={120}
-                  alt="logo "
-                  className=" sm:w-60 sm:h-32   md:h-24 md:w-32 object-none"
-                />
-              </div>
-            </div>
-            <div className="  sm:p-4  md:h-2/4 md:w-full">
-              <p className=" sm:text-[1.3rem] md:leading-tight sm:p-3 sm:text-left  text-brand-50  md:text-left md:text-[1.1rem] font-medium md:pl-2 font-monte   ">
-                Working with them was incredibly smooth, and I absolutely adore
-                every design they created for me.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className=" sm:w-[22rem] sm:h-[20rem] md:w-[20rem] md:h-[15rem]  bg-brand-300 md:ml-10 flex flex-col border-full ">
-            <div className="md:h-2/5 md:w-full flex justify-between border-bottom">
-              <div className=" sm:pl-3 flex flex-col justify-center md:w-32 md:items-center">
-                <h3 className="sm:text-xl md:text-base"> Jason knight </h3>
-                <Image
-                  src="/reviews.png"
-                  width={100}
-                  height={80}
-                  alt="logo "
-                  className=" sm:h-[2.5rem] "
-                />
-              </div>
-              <div className=" flex h-full w-24">
-                <Image
-                  src="/client3.png"
-                  width={150}
-                  height={120}
-                  alt="logo "
-                  className=" sm:w-60 sm:h-32   md:h-24 md:w-32 object-none"
-                />
-              </div>
-            </div>
-            <div className="  sm:p-4  md:h-2/4 md:w-full">
-              <p className=" sm:text-[1.3rem]  md:text-lg md:leading-tight sm:p-3 sm:text-left  md:text-[1.2rem] font-monte font-medium text-brand-50  md:text-left md:pl-2    ">
-                Working with Chris at American Web Express was worthwhile. They
-                were eager to please and ultimately delivered as promised.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className=" sm:w-[22rem] sm:h-[23rem] md:w-[20rem] md:h-[19rem]  bg-brand-300 md:ml-8 flex flex-col border-full ">
-            <div className="md:h-2/5 md:w-full flex justify-between border-bottom">
-              <div className=" sm:pl-3 flex flex-col justify-center md:w-32 md:items-center">
-                <h3 className="sm:text-xl md:text-base"> Robert Brown</h3>
-                <Image
-                  src="/reviews.png"
-                  width={100}
-                  height={80}
-                  alt="logo "
-                  className=" sm:h-[2.5rem] "
-                />
-              </div>
-              <div className=" flex h-full w-24">
-                <Image
-                  src="/client3.png"
-                  width={150}
-                  height={120}
-                  alt="logo "
-                  className=" sm:w-60 sm:h-32   md:h-24 md:w-32 object-none"
-                />
-              </div>
-            </div>
-            <div className="  sm:p-3  md:h-2/4 md:w-full">
-              <p className=" sm:text-[1.1rem] md:text-[1.1rem] font-medium md:leading-tight sm:p-3 sm:text-left  text-brand-50 md:p-1 md:text-left md:pl-2 font-monte   ">
-                American Web Express are excellent. Quick and efficient with
-                nothing being too much trouble. Would recommend to anyone
-                looking for SEO, web dev, Gfx , ppc.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+    <Slider />
 
       {/* Form  */}
 
 
-      <div className=" sm:h-[80rem]  bg-brand-100  flex justify-center items-center md:h-[150vh] min-w-full">
+      <div className=" sm:h-[80rem]  bg-brand-100  flex justify-center items-center md:h-[150vh] min-w-full  xl:h-[100vh]  " >
         <div className=" sm:h-[60rem]  sm:w-[90%]  md:h-[90%] md:w-[80%] bg-brand-500 flex flex-col sm:justify-evenly md:items-center">
           <div className=" sm:h-[20rem] sm:w-full sm:pt-[1rem]  md:h-[16rem] md:w-[90%] flex flex-col  items-center justify-center" >
             <h2 className=" sm:text-[1.9rem] sm:mb-[0.4rem] sm:text-center  md:mb-8 uppercase  md:text-[45px] font-monte font-extrabold    text-brand-400   ">
               Get in Touch Today
             </h2>
-            <p className=" sm:text-[0.9rem] sm:text-center  sm:p-[0.7rem] md:text-sm text-brand-50 font-monte md:text-[16px]   ">
+            <p className=" sm:text-[0.9rem] sm:text-center  sm:p-[0.7rem] md:text-sm text-brand-50 font-monte md:text-[16px] xl:text-[1.4rem]  xl:leading-[1.4rem]  ">
               Start your online journey with American Web Express, offering
               top-notch services including website development, web design, SEO,
               graphics, and more. Gain a competitive edge at affordable rates.
             </p>
           </div>
 
-          <form ref={form} onSubmit={sendEmail} >
+          <form ref={form} onSubmit={sendEmail}  className="xl:w-[90rem] " >
           <div className=' sm:h-[58rem] sm:w-full md:w-full md:h-[40rem] flex flex-col '>
               <div className=' sm:h-[10rem] sm:w-full sm:flex-col md:w-full md:h-[5rem] justify-evenly items-center flex md:flex-row ' > 
               <input
@@ -411,7 +252,7 @@ export default function About() {
                 autoComplete="off"
                 onChange={(e) => { setName((e.target.value))}}
 
-                className=' sm:w-[18rem] sm:h-[3rem]   md:w-[21rem] md:h-[3rem] md:pl-4 '              />
+                className=' sm:w-[18rem] sm:h-[3rem]   md:w-[21rem] md:h-[3rem] md:pl-4 xl:text-[1.4rem] xl:w-[29rem] '              />
               <input
                  value={email}
                 type="email"
@@ -421,7 +262,7 @@ export default function About() {
                 autoComplete="off"
                 placeholder=' Email '
                 onChange={(e) => { setEmail((e.target.value))}}
-                className=' sm:w-[18rem] sm:h-[3rem]   md:w-[21rem] md:h-[3rem] md:pl-4 '    
+                className=' sm:w-[18rem] sm:h-[3rem]   md:w-[21rem] md:h-[3rem] md:pl-4 xl:text-[1.4rem] xl:w-[29rem] '    
                           />
               </div>
               <div className=' sm:h-[10rem] sm:w-full sm:flex-col md:w-full md:h-[5rem] justify-evenly items-center flex md:flex-row ' > 
@@ -435,13 +276,13 @@ export default function About() {
                 required
                 autoComplete="off"
                 onChange={(e) => { setNumber((e.target.value))}}
-                className=' sm:w-[18rem] sm:h-[3rem]   md:w-[21rem] md:h-[3rem] md:pl-4 '    
+                className=' sm:w-[18rem] sm:h-[3rem]   md:w-[21rem] md:h-[3rem] md:pl-4 xl:text-[1.4rem] xl:w-[29rem] '    
               />
             <select
   value={selectedOption}
   onChange={handleSelectChange}
   name="user_service"
-  className=' sm:w-[18rem] sm:h-[3rem]   md:w-[21rem] md:h-[3rem] md:pl-4 ' 
+  className=' sm:w-[18rem] sm:h-[3rem]   md:w-[21rem] md:h-[3rem] md:pl-4 xl:text-[1.4rem] xl:w-[29rem] ' 
 >
   {getSelectOptions().map((option) => (
     <option key={option.value} value={option.value}>
@@ -460,9 +301,9 @@ export default function About() {
                 placeholder=' Project Details'
                 onChange={(e) => { setMessage((e.target.value))}} 
                 required
-                 className=' sm:w-[18rem] md:w-[46rem] md:h-[20rem] pl-4 pt-4'
+                 className=' sm:w-[18rem] md:w-[46rem] md:h-[20rem] pl-4 pt-4 xl:w-[68rem] xl:text-[1.5rem]  '
               ></textarea>
-              <button type='submit'  value="Send"    className="sm:pb-2 md:pb-2 md:w-40 sm:text-[12px]  sm:w-[9rem] md:text-base   py-2 px-2 text-center uppercase   font-monte     font-semibold    border md:border-solid border-brand-700    "  > Contact US </button>
+              <button type='submit'  value="Send"    className="sm:pb-2 md:pb-2 md:w-40 sm:text-[12px]  sm:w-[9rem] md:text-base   py-2 px-2 text-center uppercase   font-monte     font-semibold    border md:border-solid border-brand-700 xl:text-[1.3rem]  xl:py-[1.2rem] xl:px-[1.2rem] xl:w-[12rem]  "  > Contact US </button>
               </div>
           </div>
           {showModal && (

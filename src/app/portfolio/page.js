@@ -48,11 +48,11 @@ export default function Packages() {
 
                  
 
-        <div className="flex-grow px-8 pt-8">
-          <div className="flex items-center mb-8">
+        <div className="flex-grow  sm:pl-[0.5rem]  xl:px-8 pt-8   xl:justify-center xl:h-[15rem]  xl:items-center">
+          <div className="flex items-center mb-8 sm:flex-col md:flex ">
             <button
               onClick={() => handleTabClick("website")}
-              className={`mr-4 px-4 py-2 rounded-md text-sm font-medium ${
+              className={`mr-4 px-4 py-2 rounded-md text-sm font-medium xl:w-40 xl:h-12  xl:text-[1.5rem] ${
                 activeTab === "website" ? "bg-brand-200 text-brand-700" : "text-brand-600 hover:text-brand-700"
               }`}
             >
@@ -60,7 +60,7 @@ export default function Packages() {
             </button>
             <button
               onClick={() => handleTabClick("logo")}
-              className={`mr-4 px-4 py-2 rounded-md text-sm font-medium ${
+              className={`mr-4 px-4 py-2 rounded-md text-sm font-medium xl:w-40 xl:h-12 xl:text-[1.5rem] ${
                 activeTab === "logo" ? "bg-brand-200 text-brand-700" : "text-brand-600 hover:text-brand-700"
               }`}
             >
@@ -68,7 +68,7 @@ export default function Packages() {
             </button>
             <button
               onClick={() => handleTabClick("seo")}
-              className={`mr-4 px-4 py-2 rounded-md text-sm font-medium ${
+              className={`mr-4 px-4 py-2 rounded-md text-sm font-medium xl:w-40 xl:h-12 xl:text-[1.5rem] ${
                 activeTab === "seo" ? "bg-brand-200 text-brand-700" : "text-brand-600 hover:text-brand-700"
               }`}
             >
@@ -76,7 +76,7 @@ export default function Packages() {
             </button>
             <button
               onClick={() => handleTabClick("branding")}
-              className={`px-4 py-2 rounded-md text-sm font-medium ${
+              className={`px-4 py-2 rounded-md text-sm font-medium xl:w-40 xl:h-12  xl:text-[1.5rem] ${
                 activeTab === "branding" ? "bg-brand-200 text-brand-700" : "text-brand-600 hover:text-brand-700"
               }`}
             >

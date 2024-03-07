@@ -25,29 +25,30 @@ function Footer() {
           </div>
         </div>
         <div className="  sm:flex-col sm:pl-4 md:pl-1 md:h-2/4  w-full  flex md:flex-row md:justify-evenly ">
-          <div className=" sm:h-[10rem]  md:h-full md:w-1/4 flex md:justify-center ">
-            <ol className=" sm:justify-evenly    flex flex-col font-monte  ">
-              <li className=" font-monte font-semibold md:text-[1.2rem]  md:mb-5 "> Quick Links </li>
-              <li className=" font-monte font-medium md:text-[14px] md:mb-2  text-brand-400"> Home</li>
-              <li className=" font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400 "> About</li>
-              <li className="  font-monte font-medium md:text-[14px] md:mb-2 text-brand-400" >Clintele</li>
-              <li className="  font-monte font-medium md:text-[14px] md:mb-2 text-brand-400 ">Features </li>
+        <div className=" sm:h-[10rem]  md:h-full md:w-1/4 flex justify-center ">
+            <ol className=" sm:justify-evenly md:justify-normal flex flex-col  font-monte ">
+              <li className=" font-monte font-semibold md:text-[1.2rem] md:mb-5 xl:text-[2rem] " >Quick Links</li>
+              <li className="  font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400  xl:text-[1.3rem] " > Home</li>
+              <li className=" font-monte font-medium md:text-[14px] md:mb-2 text-brand-400 xl:text-[1.3rem] " > About Us </li>
+              <li className=" font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400 xl:text-[1.3rem] " > Services</li>
+              <li className=" font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400 xl:text-[1.3rem] " > Portfolio</li>
+              <li className=" font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400 xl:text-[1.3rem] " > Contact Us</li>
             </ol>
           </div>
           <div className=" sm:h-[10rem]  md:h-full md:w-1/4 flex ">
             <ol className=" sm:justify-evenly md:justify-normal flex flex-col  font-monte ">
-              <li className=" font-monte font-semibold md:text-[1.2rem] md:mb-5 " >Services</li>
-              <li className="  font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400 " > Web Development</li>
-              <li className=" font-monte font-medium md:text-[14px] md:mb-2 text-brand-400 " > Web Design</li>
-              <li className=" font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400 " > Graphic Design</li>
-              <li className=" font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400 " > SEO & Marketing </li>
+              <li className=" font-monte font-semibold md:text-[1.2rem] md:mb-5 xl:text-[2rem] " >Services</li>
+              <li className="  font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400  xl:text-[1.3rem] " > Web Development</li>
+              <li className=" font-monte font-medium md:text-[14px] md:mb-2 text-brand-400  xl:text-[1.3rem] " > Web Design</li>
+              <li className=" font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400  xl:text-[1.3rem] " > Graphic Design</li>
+              <li className=" font-monte font-medium  md:text-[14px] md:mb-2 text-brand-400  xl:text-[1.3rem] " > SEO & Marketing </li>
             </ol>
           </div>
 
 
-          <div className=" sm:h-[15rem]  md:h-full md:w-1/4 flex">
+          <div className=" sm:h-[15rem]  md:h-full md:w-1/4 flex xl:w-[27%] ">
             <ol className=" sm:justify-evenly md:justify-normal  flex flex-col ">
-              <li className=" font-monte font-semibold md:text-[1.2rem]  md:mb-5  "> Contact Us </li>
+              <li className=" font-monte font-semibold md:text-[1.2rem]  md:mb-5 xl:text-[2rem] "> Contact Us </li>
               <li className=" md:mb-3  text-brand-400 ">
                 <div className=" flex ">
                   <Image
@@ -55,10 +56,10 @@ function Footer() {
                     width={100}
                     height={80}
                     alt="logo "
-                    className=" sm:h-[2.5rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-2 "
+                    className=" sm:h-[2.5rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-2 xl:w-12  xl:h-10 "
                   />{" "}
-                  Suite 1149 Unit 3A, 34-35 Hatton Garden, Holborn, London 
-                   UK
+                  <p className="xl:text-[1.3rem] " > Suite 1149 Unit 3A, 34-35 Hatton Garden, Holborn, London 
+                   UK</p> 
                 </div>
               </li>
               <li className="md:mb-3  text-brand-400 ">
@@ -68,9 +69,9 @@ function Footer() {
                     width={100}
                     height={80}
                     alt="logo "
-                    className=" sm:h-[2.5rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-1 "
+                    className=" sm:h-[2.5rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-1 xl:w-12  xl:h-10 "
                   />{" "}
-                  +11122244455
+                <p className="xl:text-[1.3rem] " >  +11122244455</p>
                 </div>
               </li>
               <li className="md:mb-3 text-brand-400 " >
@@ -80,9 +81,9 @@ function Footer() {
                     width={100}
                     height={80}
                     alt="logo "
-                    className=" sm:h-[2.5rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-1"
+                    className=" sm:h-[2.5rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-1 xl:w-12  xl:h-10 "
                   />{" "}
-                  hello@awh.com
+                 <p className="xl:text-[1.3rem] " >  hello@awh.com</p>
                 </div>
               </li>
             </ol>
@@ -92,7 +93,7 @@ function Footer() {
 
           <div className="  sm:h-[10rem]  md:h-full md:w-1/5 flex ">
             <ol className=" sm:justify-evenly md:justify-normal   flex flex-col ">
-              <li className=" font-monte font-semibold md:text-[1.2rem]  md:mb-5 " > Social Media Links </li>
+              <li className=" font-monte font-semibold md:text-[1.2rem]  md:mb-5 xl:text-[2rem] " > Social Media Links </li>
               <div className="flex sm:justify-evenly  md:justify-between md:w-[70%] ">
               <li>
         

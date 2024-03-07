@@ -27,9 +27,9 @@ function NavBar() {
   };
 
   return (
-    <div  className={`  md:h-[5rem] min-w-full  ${isServicesPage || pathname === '/portfolio'  || pathname === '/about' ? "md:bg-brand-100" : "bg-brand-300" } `} >
+    <div  className={`  md:h-[6rem] min-w-full  ${ pathname === '/portfolio'  ? "bg-brand-300" : "bg-brand-300" } `} >
       <nav className="w-full bg-white  top-0 left-0 right-0 z-10 md:pt-2">
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div className="justify-between px-4 mx-auto  1920:max-w-[123rem] md:items-center md:flex md:px-8 xl:h-[6rem] ">
           <div>
             <div className="flex items-center justify-between   md:block">
               {/* LOGO */}
@@ -40,7 +40,7 @@ function NavBar() {
               width={130}
               height={90}
               alt="logo "
-              className=" sm:w-[10rem] sm:h-[5rem]   md:w-48 md:h-16 object-contain"
+              className=" sm:w-[10rem] sm:h-[5rem]   md:w-48 1920:w-[14rem] md:h-16 object-contain"
             />
           </div>
               </Link>
@@ -70,7 +70,7 @@ function NavBar() {
               </div>
             </div>
           </div>
-          <div  className=" md:w-[50rem]">
+          <div  className=" md:w-[50rem]  xl:w-[57rem]">
             <div
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
                 navbar ? "p-12 md:p-0 block" : "hidden"
@@ -78,7 +78,7 @@ function NavBar() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex capitalize  font-monte ">
               <li className={`
-          pb-3 sm:text-xl md:text-lg font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link
+          pb-3 sm:text-xl md:text-lg 1920:text-[1.7rem] font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link xl:text-[1.7rem]
           ${pathname === '/' ? 'active' : ''}
         `}>
                   <Link href="/" onClick={handleNavLinkClick}>
@@ -87,8 +87,8 @@ function NavBar() {
                 </li>
 
               <li className={`
-          pb-3 sm:text-xl md:text-lg font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link
-          ${pathname === '/about' ? 'md:text-brand-500' : ''}
+          pb-3 sm:text-xl md:text-lg 1920:text-[1.7rem] font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link xl:text-[1.7rem]
+          ${pathname === '/about' ? 'active ' : ' text-brand-50 '}
         `}>
                   <Link href="/about" onClick={handleNavLinkClick}>
                     About us 
@@ -96,8 +96,8 @@ function NavBar() {
                 </li>
 
                     <li className={`
-          pb-3 sm:text-xl md:text-lg font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link
-          ${pathname === '/service' ? ' md:text-brand-500' : ''}
+          pb-3 sm:text-xl md:text-lg 1920:text-[1.7rem] font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link  xl:text-[1.7rem]
+          ${pathname === '/service' ? ' active' : ''}
         `}>
                   <Link href="/service" onClick={handleNavLinkClick}>
                     Services
@@ -105,8 +105,8 @@ function NavBar() {
                 </li>
 
                 <li className={`
-          pb-3 sm:text-xl md:text-lg font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link
-          ${pathname === '/portfolio' ? 'md:text-brand-500' : ''}
+          pb-3 sm:text-xl md:text-lg 1920:text-[1.7rem] font-monte md:text-brand-50 font-semibold sm:text-brand-200 py-2 md:px-6 text-center border-b-2 md:border-b-0 border-purple-900 md:hover:text-purple-600 md:hover:bg-transparent navbar-link  xl:text-[1.7rem]
+          ${pathname === '/portfolio' ? 'md:text-brand-100' : ''}
         `}>
                   <Link href="/portfolio" onClick={handleNavLinkClick}>
                     Portfolio
@@ -114,7 +114,7 @@ function NavBar() {
                 </li>
 
                 <li className={`
-          sm:pb-2 md:pb-2 md:w-40 sm:text-xl md:text-base  py-2 px-2 text-center   font-monte  hover:md:bg-brand-100   hover:md:text-brand-300  md:rounded-md    font-semibold md:text-brand-100   md:border md:border-solid md:border-brand-100 sm:text-brand-200  
+          sm:pb-2 md:pb-2 md:w-40 sm:text-xl md:text-base  1920:text-[1.7rem] py-2 px-2 text-center   font-monte  hover:md:bg-brand-100   hover:md:text-brand-300  md:rounded-md    font-semibold md:text-brand-100   md:border md:border-solid md:border-brand-100 sm:text-brand-200  xl:text-[1.2rem]
           ${pathname === '/touch' && '  ' || pathname === '/service'  && 'md:text-brand-50 md:border-brand-50' || pathname === '/portfolio'  && 'md:text-brand-50 md:border-brand-50' || pathname === '/about'  && 'md:text-brand-50 md:border-brand-50'}
         `}>
                   <Link href="/touch" onClick={handleNavLinkClick}>

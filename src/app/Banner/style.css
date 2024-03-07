@@ -21,3 +21,13 @@
     object-fit: cover;
   }
   
+  @media (min-width: 1920px) {
+.large{
+
+  height: 75vh;
+  
+}
+
+
+
+  }
