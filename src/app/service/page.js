@@ -216,11 +216,11 @@ export default function About() {
           },
         }}
         direction="horizontal" // Set direction to vertical
-        // loop={true}
-        // autoplay={{
-        //   delay: 1900,
-        //   disableOnInteraction: false,
-        // }}
+        loop={true}
+        autoplay={{
+          delay: 1900,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true, // Enable pagination dots
         }}
