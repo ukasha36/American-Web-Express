@@ -12,7 +12,7 @@ function Footer() {
  
   return (
     <>
-     <div className=" sm:h-[60rem] min-w-full md:h-[60vh] bg-[#083b7e]  pt-[2rem]  footer ">
+     <div className=" sm:h-[60rem] min-w-full md:h-[60vh] bg-[#083b7e]  pt-[2rem] mt-[2rem] footer ">
         <div className="  sm:flex-col sm:pl-4 md:pl-1 md:h-[70%]  w-full  flex md:items-center md:flex-row md:justify-evenly ">
         <div className="  sm:justify-evenly md:justify-evenly flex flex-col md:pl-[1rem] font-monte  sm:h-[16rem]  md:h-full md:w-1/4  xl:h-[90%]  ">
             <ol className=" font-semibold xl:text-[1.5rem] "> Quick Links </ol>
