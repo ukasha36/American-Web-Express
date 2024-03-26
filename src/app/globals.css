@@ -53,8 +53,8 @@
   }
  .icon{
  
-    background: #00387F;
-    color: #fff;
+    color: #00387F;
+    background-color: #fff;
     font-size: 16px;
  
     line-height: 40px;
@@ -127,4 +127,20 @@ nav li a.active {
 .background{
   background: rgb(131,58,180);
 background: linear-gradient(90deg, rgba(131,58,180,1) 12%, rgba(253,29,29,1) 69%, rgba(252,176,69,1) 99%);
+}
+
+.contact {
+  height: 4rem;
+align-items: center;
+}
+li{
+  list-style: none;
+}
+.footer {
+  border: 1px transparent;
+border-radius: 50px 50px 0px 0px ;
+ 
+}
+[data-aos="fade-left"] {
+  width: 80%; /* Adjust width as needed */
 }
