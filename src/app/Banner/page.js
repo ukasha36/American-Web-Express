@@ -64,8 +64,8 @@ function Banner() {
                 software apps, web dev, and social & content marketing..
               </p>
               <button
-                className="sm:text-[1rem] sm:pr-[0.8rem] sm:pl-[0.8rem] md:pb-2 md:w-40 sm:text-xl md:text-base 1920:text-[1.3rem]  1920:pt-[0.7rem] 1920:pb-[0.7rem] sm:py-2 sm:px-2 text-center hover:sm:bg-brand-100  font-monte hover:text-brand-300  rounded-md    font-medium text-brand-500   border md:border-solid border-brand-100  xl:text-[1.3rem]  "
-                data-aos="flip-down"
+                className="sm:text-[1rem] sm:pr-[0.8rem] sm:pl-[0.8rem] md:pb-2 md:w-40  md:text-base 1920:text-[1.3rem]  1920:pt-[0.7rem] 1920:pb-[0.7rem] sm:py-2 sm:px-2 text-center hover:sm:bg-brand-100  font-monte hover:text-brand-300  rounded-md    font-medium text-brand-500   border md:border-solid border-brand-100  xl:text-[1.3rem]  "
+                data-aos="flip-up"
               >
                 <Link href="/about">Read More</Link>
               </button>
@@ -470,13 +470,13 @@ function Banner() {
           <div className="  sm:h-2/5 md:w-2/5 md:h-full flex flex-col md:justify-center  ">
             <h3
               className=" sm:font-semibold sm:text-center md:font-bold text-3xl mb-3 mt-3 md:text-justify text-brand-100 xl:text-[2.2rem] "
-              data-aos="fade-left"
+              data-aos="fade-down"
             >
               Visual Design Creation
             </h3>
             <p
               className="sm:text-center md:text-start text-brand-50 font-monte sm:p-[0.6rem] font-medium xl:text-[1.4rem] "
-              data-aos="fade-left"
+              data-aos="fade-down"
             >
               Develop visually appealing graphics and design elements that align
               with your brand identity and marketing goals
@@ -490,13 +490,13 @@ function Banner() {
           <div className=" md:w-2/5 md:h-full flex sm:flex-col   sm:h-2/5 md:justify-center ">
             <h3
               className=" sm:font-semibold sm:text-center md:font-bold text-3xl mb-3 mt-3 md:text-justify text-brand-100 xl:text-[2.2rem] "
-              data-aos="fade-left"
+              data-aos="fade-down"
             >
               Branding Identity
             </h3>
             <p
               className="sm:text-center md:text-start text-brand-50 font-monte sm:p-[0.6rem] font-medium xl:text-[1.4rem] "
-              data-aos="fade-left"
+              data-aos="fade-down"
             >
               Maintain consistency in branding across all digital assets,
               including logos, color schemes, typography, and imagery
@@ -549,13 +549,13 @@ function Banner() {
           <div className="  sm:h-2/5  md:w-2/5 md:h-full flex flex-col  md:justify-center ">
             <h3
               className=" sm:font-semibold sm:text-center md:font-bold text-3xl mb-3 mt-3 md:text-justify text-brand-100 xl:text-[2.2rem] "
-              data-aos="fade-left"
+              data-aos="fade-down"
             >
               Performance Analysis
             </h3>
             <p
               className="sm:text-center md:text-start text-brand-50 font-monte sm:p-[0.6rem] font-medium xl:text-[1.4rem] "
-              data-aos="fade-left"
+              data-aos="fade-down"
             >
               Monitor the performance of visual content and marketing campaigns
               using analytics tools to track engagement metrics
