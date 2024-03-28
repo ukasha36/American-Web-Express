@@ -1,17 +1,9 @@
 "use client";
-import { useState } from "react";
+import { useState , useEffect  } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { global } from "styled-jsx/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "@fortawesome/fontawesome-free/css/all.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
-
+ 
 // Import Swiper React components
 import { Navigation, Autoplay, Pagination, Scrollbar } from "swiper/modules";
 
@@ -22,7 +14,29 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-export default function About() {
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+ 
+
+
+
+export default function Service() {
+
+
+ 
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
+
+
+
+
+
   const [selectedOption, setSelectedOption] = useState("");
 
   // Handler function to update selected option
@@ -39,6 +53,7 @@ export default function About() {
             height={300}
             alt="logo"
             className=" md:h-[28rem] md:w-[40rem]  xl:h-[32rem] xl:w-[45rem]  "
+            data-aos="fade-down"
           />
           <Image
             src="/welcome.png"
@@ -46,11 +61,12 @@ export default function About() {
             height={400}
             alt="logo"
             className="  sm:static sm:h-[5rem] sm:w-[8rem] sm:object-contain  md:h-[15rem] md:w-[35rem] md:absolute md:top-[0.4rem] md:left-[23rem] xl:left-[35rem]  "
+            data-aos="zoom-in"
           />
         </div>
 
         <div className="sm:h-[32%] sm:w-full sm:justify-center md:h-full  md:w-2/5 md:pt-7 flex text-pretty md:justify-start md:items-center  ">
-          <h2 className=" sm:text-[2.1rem] sm:mb-[1.4rem] sm:text-center md:mt-[2rem] md:mb-1 uppercase md:text-5xl md:text-left  font-monte font-extrabold   text-brand-500  sm:text-wrap md:text-clip xl:text-[4rem]   ">
+          <h2 className=" sm:text-[2.1rem] sm:mb-[1.4rem] sm:text-center md:mt-[2rem] md:mb-1 uppercase md:text-5xl md:text-left  font-monte font-extrabold   text-brand-500  sm:text-wrap md:text-clip xl:text-[4rem]   "     data-aos="fade-down"  > 
             We specialize in digital & creative services
           </h2>
         </div>
@@ -60,7 +76,7 @@ export default function About() {
       <div className=" flex sm:flex-col sm:justify-evenly  md:pb-10 sm:h-[110rem] md:h-[150vh] min-w-full   md:justify-around xl:h-[100vh]  ">
         {/* section 1  */}
         <div className="  sm:h-[50rem]  sm:justify-evenly  flex  sm:flex-col center   md:flex-row md:justify-around md:h-2/5 w-full">
-          <div className="  sm:h-14rem  sm:pl-4 md:pl-8 flex flex-col md:w-[34rem] md:h-full justify-center xl:w-[40rem]  ">
+          <div className="  sm:h-14rem  sm:pl-4 md:pl-8 flex flex-col md:w-[34rem] md:h-full justify-center xl:w-[40rem]  "   data-aos="fade-right" >
             <h4 className=" sm:text-[32px] sm:leading-[1.8rem]  font-poppins font-medium md:text-[45px] md:leading-10 xl:text-[50px] "> Prioritize user <br/> centric solutions.</h4>
             <Image
                 src="/lin3.svg"
@@ -82,7 +98,7 @@ export default function About() {
               height={250}
               alt="logo"
               className="   sm:pb-2  md:h-full md:w-[19rem]    border-1 border-solid border-brand-300 rounded-lg border2 xl:w-[25.5rem]  "            />
-            <div className="flex sm:h-5  md:h-[5rem] md:w-[16rem] items-center ">
+            <div className="flex sm:h-5  md:h-[5rem] md:w-[18rem] xl:w-[22rem] items-center ">
               <Image
                 src="/line2.svg"
                 width={40}
@@ -90,7 +106,7 @@ export default function About() {
                 alt="logo "
                 className="h-[4rem] w-[5rem]"
               />
-              <h4 className=" font-monte text-[12px] font-bold  pl-1 xl:text-[1.4rem] ">
+              <h4 className=" font-monte text-[16px] font-bold  pl-1 xl:text-[1.4rem] ">
                 Website Development
               </h4>
             </div>
@@ -111,7 +127,7 @@ export default function About() {
                 alt="logo "
                 className="h-[4rem] w-[5rem]"
               />
-              <h4 className=" font-monte text-[12px] font-bold  pl-1 xl:text-[1.4rem]  ">
+              <h4 className=" font-monte text-[16px] font-bold  pl-1 xl:text-[1.4rem]  ">
                 Graphic Design
                </h4>
             </div>
@@ -137,7 +153,7 @@ export default function About() {
                 alt="logo "
                 className="h-[4rem] w-[5rem]"
               />
-              <h4 className=" font-monte text-[12px] font-bold  pl-1 xl:text-[1.4rem] ">
+              <h4 className=" font-monte text-[16px] font-bold  pl-1 xl:text-[1.4rem] ">
                 Web Design 
               </h4>
             </div>
@@ -159,7 +175,7 @@ export default function About() {
                 alt="logo "
                 className="h-[4rem] w-[5rem]"
               />
-              <h4 className=" font-monte text-[12px] font-bold  pl-1 xl:text-[1.4rem] ">
+              <h4 className=" font-monte text-[16px] font-bold  pl-1 xl:text-[1.4rem] ">
               Seo 
               </h4>
             </div>
@@ -180,7 +196,7 @@ export default function About() {
                 alt="logo "
                 className="h-[4rem] w-[5rem]"
               />
-              <h4 className=" font-monte text-[12px] font-bold  pl-1 xl:text-[1.4rem]   ">
+              <h4 className=" font-monte text-[16px] font-bold  pl-1 xl:text-[1.4rem]   ">
                 UI & UX Design
                </h4>
             </div>

@@ -64,7 +64,7 @@ export default function Packages() {
                 activeTab === "logo" ? "bg-brand-200 text-brand-700" : "text-brand-600 hover:text-brand-700"
               }`}
             >
-              Logo
+             Graphic Design
             </button>
             <button
               onClick={() => handleTabClick("seo")}

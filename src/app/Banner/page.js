@@ -52,7 +52,7 @@ function Banner() {
             </div>
             <div className="w-full sm:h-3/4  md:h-3/6 md:flex md:flex-col justify-around pl-4 pr-3  ">
               <h1
-                className=" sm:text-2xl  md:text-4xl font-monte font-extrabold capitalize text-brand-400  sm:text-wrap md:text-clip md:leading-9  xl:leading-[3rem]  mb-4 "
+                className=" sm:text-2xl  md:text-4xl font-monte font-extrabold capitalize text-brand-100  sm:text-wrap md:text-clip md:leading-9  xl:leading-[3rem]  mb-4 "
                 data-aos="fade-right"
               >
                 Certified solutions to empower your vision.
@@ -85,7 +85,7 @@ function Banner() {
         </div>
       </div>
       {/* Section 2  */}
-      <div className="bg-brand-500 font-monte flex sm:flex-col md:flex-row  sm:p-4 sm:h-[56rem] md:h-lvh min-w-full sm:justify-start md:justify-center  xl:h-[50vh]">
+      <div className="bg-brand-500 font-monte flex sm:flex-col md:flex-row  sm:p-4 sm:h-[56rem] md:h-[70vh] min-w-full sm:justify-start md:justify-center  xl:h-[45vh]">
         <div className="    md:w-2/4 flex flex-col justify-center">
           <div className="flex sm:h-9  md:h-9 w-full  ">
             <Image

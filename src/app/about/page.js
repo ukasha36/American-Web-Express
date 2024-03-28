@@ -228,7 +228,7 @@ export default function About() {
 
       {/* Form  */}
 
-      <div className=" sm:h-[80rem]  bg-brand-100  flex justify-center items-center md:h-[150vh] min-w-full  xl:h-[100vh]  ">
+      <div className=" sm:h-[80rem]  bg-brand-100  flex justify-center items-center md:h-[150vh] min-w-full  xl:h-[100vh] md:mb-[4rem]  ">
         <div className=" sm:h-[60rem]  sm:w-[90%]  md:h-[90%] md:w-[80%] bg-brand-500 flex flex-col sm:justify-evenly md:items-center">
           <div className=" sm:h-[20rem] sm:w-full sm:pt-[1rem]  md:h-[16rem] md:w-[90%] flex flex-col  items-center justify-center">
             <h2 className=" sm:text-[1.9rem] sm:mb-[0.4rem] sm:text-center  md:mb-8 uppercase  md:text-[45px] font-monte font-extrabold    text-brand-400   ">
@@ -241,7 +241,7 @@ export default function About() {
             </p>
           </div>
 
-          <form ref={form} onSubmit={sendEmail} className="xl:w-[90rem] ">
+          <form ref={form} onSubmit={sendEmail} className="xl:w-[90rem]  ">
             <div className=" sm:h-[58rem] sm:w-full md:w-full md:h-[40rem] flex flex-col ">
               <div className=" sm:h-[10rem] sm:w-full sm:flex-col md:w-full md:h-[5rem] justify-evenly items-center flex md:flex-row ">
                 <input
