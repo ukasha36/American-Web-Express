@@ -73,7 +73,7 @@ export default function Service() {
       </div>
 
       {/* Section 2 */}
-      <div className=" flex sm:flex-col sm:justify-evenly  md:pb-10 sm:h-[110rem] md:h-[150vh] min-w-full   md:justify-around xl:h-[100vh]  ">
+      <div className=" flex sm:flex-col sm:justify-center  md:pb-10 sm:h-[110rem] md:h-[150vh] min-w-full   md:justify-around xl:h-[100vh]  ">
         {/* section 1  */}
         <div className="  sm:h-[50rem]  sm:justify-evenly  flex  sm:flex-col center   md:flex-row md:justify-around md:h-2/5 w-full">
           <div className="  sm:h-14rem  sm:pl-4 md:pl-8 flex flex-col md:w-[34rem] md:h-full justify-center xl:w-[40rem]  "   data-aos="fade-right" >

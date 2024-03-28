@@ -56,7 +56,7 @@ function Footer() {
                     alt="logo "
                     className=" sm:h-[2rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-1 xl:w-12  xl:h-10 "
                   /> 
-                <p className="xl:text-[1.3rem] " > +1 818 650-9785</p>
+                <p className="xl:text-[1.3rem] " >+13038006637</p>
                 </div>
               </li>
               <li className="  text-brand-500 " >
@@ -78,7 +78,7 @@ function Footer() {
           <div className="  sm:h-[10rem]  md:h-full md:w-1/5 flex flex-col  md:pt-[1.5rem] xl:pt-[3.5rem] ">
             <ol className="   font-semibold xl:text-[1.5rem] text-brand-100   "> Social Media Links  </ol>
               
-              <div className="flex sm:justify-evenly  md:justify-between md:w-[70%] mt-[2rem] ">
+              <div className="flex sm:justify-center  md:justify-start md:w-[70%] mt-[2rem] ">
               <li>
         <Link href="https://www.facebook.com/profile.php?id=61550320344954">
           <FontAwesomeIcon icon={faFacebook} className="icon mr-4" /> 
@@ -89,9 +89,6 @@ function Footer() {
           <FontAwesomeIcon icon={faInstagram} className="icon mr-4" />  
         </Link>
       </li>
-              <li>
-              <FontAwesomeIcon icon={faLinkedinIn} className=" icon mr-4 " />
-              </li>
               </div>
              
           

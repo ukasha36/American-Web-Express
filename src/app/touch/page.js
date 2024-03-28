@@ -134,9 +134,9 @@ export default function Touch() {
                   width={100}
                   height={80}
                   alt="logo "
-                  className=" sm:h-[2rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-1 xl:h-16 xl:w-12 "
+                  className=" sm:h-[2rem] sm:w-[2rem] md:w-[2rem] md:h-[1.3rem] mr-1 xl:h-16 xl:w-12 "
                 />
-                <p className=" xl:text-[1.2rem]">+1 8186509785</p>
+                <p className=" xl:text-[1.2rem]">+13038006637</p>
               </div>
 
               <div className=" flex xl:items-center xl:mb-[1rem] ">
@@ -145,11 +145,11 @@ export default function Touch() {
                   width={100}
                   height={80}
                   alt="logo "
-                  className=" sm:h-[2rem] sm:w-[3rem] md:w-[2rem] md:h-[1.3rem] mr-1 xl:h-16 xl:w-12 "
+                  className=" sm:h-[2rem] sm:w-[2rem] md:w-[2rem] md:h-[1.3rem] mr-1 xl:h-16 xl:w-12 "
                 />
                 <p className=" xl:text-[1.2rem]">
-                  {" "}
-                  americanwebexpress@gmail.com{" "}
+                
+                  americanwebexpress@gmail.com 
                 </p>
               </div>
             </div>
