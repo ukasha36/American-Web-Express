@@ -19,7 +19,7 @@ import { React, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Slider from '../Components/slider.js'
+import Slider from "../Components/slider.js";
 
 function Banner() {
   useEffect(() => {
@@ -61,7 +61,7 @@ function Banner() {
                 className=" sm:text-justify sm:max-w-[300px] sm:text-sm md:max-w-max leading-6 mb-4 text-brand-500 font-monte    xl:text-[1.3rem] xl:leading-[2rem]  "
                 data-aos="fade-right"
               >
-                We are a leading software development & marketing company in UK,
+                We are a leading software development & marketing company in USA,
                 providing cutting-edge digital solutions. Specializing in
                 software apps, web dev, and social & content marketing..
               </p>
@@ -85,7 +85,7 @@ function Banner() {
         </div>
       </div>
       {/* Section 2  */}
-      <div className="bg-brand-500 font-monte flex sm:flex-col md:flex-row  sm:p-4 sm:h-[56rem] md:h-[70vh] min-w-full sm:justify-start md:justify-center  xl:h-[45vh]">
+      <div className="bg-brand-500 font-monte flex sm:flex-col md:flex-row  sm:p-4 sm:justify-between sm:h-[53rem] md:h-[70vh] min-w-full   md:justify-center xl:pl-[2rem] xl:h-[45vh]">
         <div className="    md:w-2/4 flex flex-col justify-center">
           <div className="flex sm:h-9  md:h-9 w-full  ">
             <Image
@@ -99,16 +99,17 @@ function Banner() {
           </div>
           <div className="text-pretty md:w-11/12 ">
             <h1 className="   sm:text-2xl  md:text-4xl  font-monte font-extrabold capitalize text-brand-400  sm:text-balance md:text-clip sm:leading-7  md:leading-9 mb-4 xl:text-[1.7rem] ">
-              Professional Tech Solutions, London
+              Professional Tech Solutions, USA
             </h1>
             <p className="text-brand-50 sm:text-justify font-medium font-monte xl:text-[1.3rem] ">
               We are dedicated to providing top-notch software and marketing
-              solutions, constantly investing in our team development to
-              tackle your challenges effectively. With creativity, strategic
-              planning, and the latest techniques, we aim to surpass
-              expectations and achieve excellence in every project. As pioneers
-              in our industry, we are always pushing boundaries to deliver
-              outstanding results for our clients.
+              solutions, constantly investing in our team development to tackle
+              your challenges effectively. With creativity, strategic planning,
+              and the latest techniques, we aim to surpass expectations and
+              achieve excellence in every project. As pioneers in our industry,
+              we are always pushing boundaries to deliver outstanding results
+              for our clients.
+              <br />
               <br />
               As innovative leaders in our field, we are constantly pushing the
               boundaries and utilizing the latest methodologies to deliver
@@ -116,9 +117,9 @@ function Banner() {
             </p>
           </div>
         </div>
-        <div className="   sm:h-11 md:h-full  md:w-5/12 md:pt-3 md:flex justify-center items-center pl-2">
+        <div className="   sm:h[16rem] md:h-full  md:w-5/12 md:pt-3 md:flex justify-center items-center pl-2">
           <Image
-            src="/pic4.png"
+            src="/work9.jpg"
             width={400}
             height={300}
             alt="logo"
@@ -192,7 +193,7 @@ function Banner() {
         direction="horizontal" // Set direction to vertical
         loop={true}
         autoplay={{
-          delay: 2500,
+          delay: 2400,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -202,7 +203,7 @@ function Banner() {
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
-          <div className=" h-full flex flex-col">
+          <div className=" h-full w-[100%] flex flex-col">
             <div
               className=" h-3/6 bg-brand-500 flex  flex-col md:justify-evenly
             "
@@ -221,14 +222,13 @@ function Banner() {
               </div>
               <div className=" sm:w-5/6  md:w-2/6 flex sm:h-2/4  md:h-3/5 md:pl-12 sm:pl-4">
                 <p className=" text-brand-50 text-justify sm:leading-5 sm:text-sm md:text-base font-medium xl:text-[1.3rem] ">
-                  Our skilled web developers craft digital excellence, turning
-                  visions into online realities.With expertise and innovation,
-                  we transform ideas into dynamic websites, ensuring your online
-                  presence stands out in the digital landscape
+                  Our web developers create digital excellence, turning visions
+                  into online realities with expertise and innovation, ensuring
+                  your presence stands out in the digital landscape.
                 </p>
               </div>
             </div>
-            <div className=" h-3/6 bg-brand-100 flex justify-between">
+            <div className=" h-3/6 bg-[#083b7e] flex justify-between">
               <div className=" flex sm:items-end md:items-center  ml-4  sm:pb-2 xl:pl-[3rem]">
                 <h1 className="text-7xl font-bold text-brand-300 xl:text-[6.5rem]   ">
                   01
@@ -261,7 +261,7 @@ function Banner() {
         {/* Slide 2  */}
 
         <SwiperSlide>
-          <div className=" h-full flex flex-col">
+          <div className=" h-full w-[100%] flex flex-col">
             <div
               className=" h-3/6 bg-brand-500 flex  flex-col md:justify-evenly
             "
@@ -280,14 +280,13 @@ function Banner() {
               </div>
               <div className=" sm:w-5/6  md:w-2/6 flex sm:h-2/4  md:h-3/5 md:pl-12 sm:pl-4">
                 <p className=" text-brand-50 text-justify sm:leading-5 sm:text-sm md:text-base font-medium xl:text-[1.3rem] ">
-                  Our skilled web developers craft digital excellence, turning
-                  visions into online realities.With expertise and innovation,
-                  we transform ideas into dynamic websites, ensuring your online
-                  presence stands out in the digital landscape
+                  Our skilled graphic designers bring your visions to life with
+                  captivating creativity. We transform concepts into stunning
+                  visuals, ensuring your brand stands out.
                 </p>
               </div>
             </div>
-            <div className=" h-3/6 bg-brand-100 flex justify-between">
+            <div className=" h-3/6 bg-[#083b7e] flex justify-between">
               <div className=" flex sm:items-end md:items-center  ml-4  sm:pb-2 xl:pl-[3rem]">
                 <h1 className="text-7xl font-bold text-brand-300 xl:text-[6.5rem]   ">
                   02
@@ -320,7 +319,7 @@ function Banner() {
         {/* Slide 3  */}
 
         <SwiperSlide>
-          <div className=" h-full flex flex-col">
+          <div className=" h-full w-[100%] flex flex-col">
             <div
               className=" h-3/6 bg-brand-500 flex  flex-col md:justify-evenly
             "
@@ -339,14 +338,13 @@ function Banner() {
               </div>
               <div className=" sm:w-5/6  md:w-2/6 flex sm:h-2/4  md:h-3/5 md:pl-12 sm:pl-4">
                 <p className=" text-brand-50 text-justify sm:leading-5 sm:text-sm md:text-base font-medium xl:text-[1.3rem] ">
-                  Our skilled web developers craft digital excellence, turning
-                  visions into online realities.With expertise and innovation,
-                  we transform ideas into dynamic websites, ensuring your online
-                  presence stands out in the digital landscape
+                  Our UI/UX designers turn concepts into immersive digital
+                  experiences. With expertise and innovation, we ensure your
+                  online presence shines
                 </p>
               </div>
             </div>
-            <div className=" h-3/6 bg-brand-100 flex justify-between">
+            <div className=" h-3/6 bg-[#083b7e] flex justify-between">
               <div className=" flex sm:items-end md:items-center  ml-4  sm:pb-2 xl:pl-[3rem]">
                 <h1 className="text-7xl font-bold text-brand-300 xl:text-[6.5rem]   ">
                   03
@@ -378,7 +376,7 @@ function Banner() {
 
         {/* Slide 4  */}
         <SwiperSlide>
-          <div className=" h-full flex flex-col">
+          <div className=" h-full w-[100%] flex flex-col">
             <div
               className=" h-3/6 bg-brand-500 flex  flex-col md:justify-evenly
             "
@@ -404,7 +402,7 @@ function Banner() {
                 </p>
               </div>
             </div>
-            <div className=" h-3/6 bg-brand-100 flex justify-between">
+            <div className=" h-3/6 bg-[#083b7e] flex justify-between">
               <div className=" flex sm:items-end md:items-center  ml-4  sm:pb-2 xl:pl-[3rem]">
                 <h1 className="text-7xl font-bold text-brand-300 xl:text-[6.5rem]   ">
                   04
@@ -569,7 +567,6 @@ function Banner() {
       {/* Section 4  */}
 
       <Slider />
-    
 
       {/* Footer  */}
     </>
